@@ -1,6 +1,6 @@
 {
   "method": "Node VM model with minimal DOM, storage and confirm substitutes. NOT a real browser.",
-  "passed": 99,
+  "passed": 100,
   "checks": [
     "G01 all choice routes / writing / retry",
     "G02 all choice routes / writing / retry",
@@ -100,7 +100,8 @@
     "Export entry has its own right-aligned row",
     "All 60 writing questions work independently without leaking targets until choice completed",
     "Every basic sentence highlights its exact source phrase and completed choices show mapping",
-    "Select prompt is a translation sentence and previous progress is preserved"
+    "Select prompt is a translation sentence and previous progress is preserved",
+    "Top round reset shares confirmation and only clears the current round"
   ],
   "browser": "UNVERIFIED",
   "realDevices": "UNVERIFIED"
