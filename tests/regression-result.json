@@ -1,6 +1,6 @@
 {
   "method": "Node VM model with minimal DOM, storage and confirm substitutes. NOT a real browser.",
-  "passed": 96,
+  "passed": 99,
   "checks": [
     "G01 all choice routes / writing / retry",
     "G02 all choice routes / writing / retry",
@@ -97,7 +97,10 @@
     "Round 5 export excludes all other rounds and returns to explanations",
     "Round 6 export excludes all other rounds and returns to explanations",
     "All 60 explanations start collapsed, use independent details and keep exports readable",
-    "Export entry has its own right-aligned row"
+    "Export entry has its own right-aligned row",
+    "All 60 writing questions work independently without leaking targets until choice completed",
+    "Every basic sentence highlights its exact source phrase and completed choices show mapping",
+    "Select prompt is a translation sentence and previous progress is preserved"
   ],
   "browser": "UNVERIFIED",
   "realDevices": "UNVERIFIED"
