@@ -1,6 +1,6 @@
 {
   "method": "Node VM model with minimal DOM, storage and confirm substitutes. NOT a real browser.",
-  "passed": 81,
+  "passed": 84,
   "checks": [
     "G01 all choice routes / writing / retry",
     "G02 all choice routes / writing / retry",
@@ -76,13 +76,16 @@
     "Round 5 progress, zero/partial/all wrong, reset cancel/confirm",
     "Round 6 progress, zero/partial/all wrong, reset cancel/confirm",
     "No mobile fixed Chinese size; global warning outside practice",
-    "New retry archives run metadata and cancel leaves state unchanged",
+    "Single retry button restarts wrong questions and preserves first diagnosis/history",
     "Current snapshots preserve question revision and stable option identities",
     "Changed content revision archives rather than regrades",
     "Malformed JSON, arrays and invalid records do not throw",
     "Font limits, theme and home round preferences persist in model",
     "Retry mode survives refresh without revealing original answers",
-    "No-wrong message remains visible with archived history"
+    "No wrong questions disables retry and keeps all questions visible",
+    "Readable all export includes 60 groups/120 questions, input, answers and concise options",
+    "Wrong export selects first-wrong groups and includes matching writing only",
+    "Presentation update does not invalidate current progress or question revisions"
   ],
   "browser": "UNVERIFIED",
   "realDevices": "UNVERIFIED"
