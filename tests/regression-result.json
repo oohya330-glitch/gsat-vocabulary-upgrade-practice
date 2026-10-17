@@ -1,6 +1,6 @@
 {
   "method": "Node VM model with minimal DOM, storage and confirm substitutes. NOT a real browser.",
-  "passed": 94,
+  "passed": 96,
   "checks": [
     "G01 all choice routes / writing / retry",
     "G02 all choice routes / writing / retry",
@@ -95,7 +95,9 @@
     "Round 3 export excludes all other rounds and returns to explanations",
     "Round 4 export excludes all other rounds and returns to explanations",
     "Round 5 export excludes all other rounds and returns to explanations",
-    "Round 6 export excludes all other rounds and returns to explanations"
+    "Round 6 export excludes all other rounds and returns to explanations",
+    "All 60 explanations start collapsed, use independent details and keep exports readable",
+    "Export entry has its own right-aligned row"
   ],
   "browser": "UNVERIFIED",
   "realDevices": "UNVERIFIED"
