@@ -1,6 +1,6 @@
 {
   "method": "Node VM model with minimal DOM, storage and confirm substitutes. NOT a real browser.",
-  "passed": 84,
+  "passed": 88,
   "checks": [
     "G01 all choice routes / writing / retry",
     "G02 all choice routes / writing / retry",
@@ -85,7 +85,11 @@
     "No wrong questions disables retry and keeps all questions visible",
     "Readable all export includes 60 groups/120 questions, input, answers and concise options",
     "Wrong export selects first-wrong groups and includes matching writing only",
-    "Presentation update does not invalidate current progress or question revisions"
+    "Presentation update does not invalidate current progress or question revisions",
+    "Export controls progressively expand and collapse instead of showing all actions",
+    "Sticky navigation separates round return from home, without changing progress",
+    "Each first-question explanation has all four words and practical hint before writing",
+    "Font action has visible selected state and preserves font limits"
   ],
   "browser": "UNVERIFIED",
   "realDevices": "UNVERIFIED"
