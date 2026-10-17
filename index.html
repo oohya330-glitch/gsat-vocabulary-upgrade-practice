@@ -1,20 +1,3463 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>學測英文作文｜字詞升級練習 V12</title><style>
-:root{--bg:#f5f3ef;--ink:#292929;--sub:#56534f;--line:#d9d5ce;--basic:#eae7e2;--upgrade:#dedbd5;--button:#fff;--accent:#575b55;--good:#2d6b51;--font:20px}body.dark{--bg:#242320;--ink:#f0ede7;--sub:#c7c1b7;--line:#4b4843;--basic:#35332f;--upgrade:#46423c;--button:#34322e;--accent:#d5c8b3;--good:#9ed8b7}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif}main{max-width:850px;margin:auto;padding:18px 22px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.tools{display:flex;gap:7px}button{cursor:pointer}.tool,.action{background:var(--button);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:9px 13px;font-size:15px}.eyebrow{font-size:13px;color:var(--sub)}h1{font-size:28px;margin:10px 0 6px}.subtitle{font-size:16px;color:var(--sub)}.progress{display:flex;justify-content:space-between;font-size:15px;margin:14px 0 7px}.bar{height:7px;background:var(--line);border-radius:6px;overflow:hidden}.fill{height:100%;background:var(--accent);width:0}.group{padding:13px 0 15px;border-bottom:1px solid var(--line)}.group-title{font-size:18px;font-weight:700;margin-bottom:8px}.exercise{margin-bottom:12px}.ex-title{font-size:17px;font-weight:500;margin-bottom:4px}.cn{font-size:20px;line-height:1.5;margin:2px 0}.en{font:var(--font)/1.6 Arial,sans-serif;overflow-wrap:anywhere}.stem-basic{color:var(--sub);margin:0 0 7px;line-height:1.45}.sentence{padding:8px 12px;border-radius:9px;margin:5px 0}.basic{background:var(--basic)}.upgrade,.build{background:var(--upgrade)}.sentence-label{font-size:17px;color:var(--sub);margin-bottom:2px}.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:7px}.choice,.chunk{border:1px solid var(--line);border-radius:9px;background:var(--button);color:var(--ink);font:19px Arial,sans-serif;padding:9px;min-height:44px}.choice:disabled,.chunk:disabled{opacity:.8;cursor:default}.build{min-height:48px;border-radius:9px;padding:8px;display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:7px}.placeholder{font-size:17px;color:var(--sub)}.pool{display:flex;gap:7px;flex-wrap:wrap;margin:6px 0}.build .chunk{background:var(--basic)}.row-actions,.exercise-actions,.global-actions{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:6px}.row-actions{flex-wrap:nowrap}.row-actions .action{flex:0 0 auto;white-space:nowrap}@media(max-width:560px){.row-actions{gap:5px}.row-actions .action{font-size:13px;padding:9px 7px}}.global-actions{margin-top:8px}.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}.feedback{font-size:16px;font-weight:600;color:var(--good);margin-top:5px}.feedback.retry{color:var(--sub)}details{margin-top:6px;font-size:19px;line-height:1.65}summary{cursor:pointer;color:var(--accent);font-weight:600}details p{margin:6px 0}.footer{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.round-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}.round-card{display:block;width:100%;text-align:left;padding:17px;border:1px solid var(--line);border-radius:13px;background:var(--button);color:var(--ink);font:inherit}.round-card strong{font-size:20px}.round-card small{display:block;color:var(--sub);margin-top:8px;font-size:14px}.round-meter{height:6px;border-radius:8px;background:var(--line);overflow:hidden;margin-top:12px}.round-meter span{display:block;height:100%;background:var(--accent)}@media(max-width:560px){.round-grid{grid-template-columns:1fr}}.end{font-size:17px;margin:15px 0;color:var(--sub)}@media(max-width:560px){main{padding:14px 14px 55px}h1{font-size:23px}.cn{font-size:21px}.group{padding:12px 0 14px}.sentence{padding:8px 10px}}
-</style><style>.write-area{width:100%;min-height:110px;border:1px solid #9aa1a8;border-radius:12px;background:transparent;color:inherit;padding:12px;font:inherit;line-height:1.7;box-sizing:border-box}.write-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.write-answer{padding:14px;margin-top:12px;border-radius:10px;background:rgba(120,150,120,.13);line-height:1.8}.write-tip{font-size:.9em;opacity:.8;margin:8px 0}.write-target{font-weight:700;margin:10px 0}</style></head><body><main><div class="top"><div class="eyebrow">GSAT WRITING LAB</div><div class="tools"><button class="tool" id="minus">A−</button><button class="tool" id="plus">A+</button><button class="tool" id="theme">深色模式</button></div></div><h1>學測英文作文｜字詞升級練習 V13</h1><div class="subtitle">常用字詞升級｜60 組・120 題</div><p class="subtitle">學習提醒：字詞升級並非機械式替換，而是提供另一種表達選擇。實際使用時，仍須考慮語意、語境與搭配。</p><div id="home"></div><div id="practice" hidden><div class="top"><button class="action" id="backHome">← 返回回次首頁</button><strong id="roundTitle"></strong></div><div class="progress"><span id="status"></span><span id="remaining"></span></div><div class="bar"><div class="fill" id="fill"></div></div><div class="global-actions"><button class="action" data-reset-all>全部清除重做</button></div><div id="list"></div><div id="end" class="end"></div><div class="footer"><button class="action" id="retry">重練錯題</button><button class="action" id="reset">本回清除重做</button><button class="action" id="backBottom">返回回次首頁</button></div></div></main><script>
-const DATA=[{"base":"big","advanced":"significant","cn":"這個問題對青少年有很大的影響。","basic":"This issue has a big effect on teenagers.","up":"This issue has a ____ effect on teenagers.","cn2":"這項決定對我們的未來有重大影響。","basic2":"This decision has a big impact on our future.","chunks":["This decision","has a significant impact","on our future."],"options":["essential","widespread","sufficient","significant"],"note":"significant 強調影響、差異或重要性。","coll":"a significant impact / a significant difference","answer":"significant"},{"base":"important","advanced":"essential","cn":"充足的睡眠對健康很重要。","basic":"Enough sleep is important for good health.","up":"Enough sleep is ____ for good health.","cn2":"規律練習對提升英語能力很重要。","basic2":"Regular practice is important for improving English skills.","chunks":["Regular practice","is essential","for improving English skills."],"options":["essential","valuable","crucial","beneficial"],"note":"essential 表示不可或缺，常接 to 或 for。","coll":"essential to success / essential for health","answer":"essential"},{"base":"good","advanced":"beneficial","cn":"規律運動對心理健康有益。","basic":"Regular exercise is good for mental health.","up":"Regular exercise is ____ to mental health.","cn2":"閱讀對學生的語言發展有益。","basic2":"Reading is good for students’ language development.","chunks":["Reading","is beneficial to","students’ language development."],"options":["sufficient","beneficial","significant","widespread"],"note":"beneficial 表示有益的，常搭配 be beneficial to。","coll":"beneficial to health / beneficial effects","answer":"beneficial"},{"base":"bad","advanced":"harmful","cn":"吸入污染空氣對健康有害。","basic":"Breathing polluted air is bad for our health.","up":"Breathing polluted air is ____ to our health.","cn2":"長時間久坐對身體有害。","basic2":"Sitting for long periods is bad for the body.","chunks":["Sitting for long periods","is harmful to","the body."],"options":["crucial","essential","harmful","valuable"],"note":"harmful 強調造成傷害，常搭配 be harmful to。","coll":"harmful to the environment / harmful effects","answer":"harmful"},{"base":"many","advanced":"numerous","cn":"學生有許多機會學習新技能。","basic":"Students have many opportunities to learn new skills.","up":"Students have ____ opportunities to learn new skills.","cn2":"這個城市有許多公共圖書館。","basic2":"This city has many public libraries.","chunks":["This city","has numerous","public libraries."],"options":["significant","widespread","sufficient","numerous"],"note":"numerous 修飾可數複數名詞。","coll":"numerous opportunities / numerous reasons","answer":"numerous"},{"base":"help","advanced":"assist","cn":"老師協助學生解決問題。","basic":"Teachers help students with problems.","up":"Teachers ____ students with problems.","cn2":"志工協助長者完成日常活動。","basic2":"Volunteers help older adults with daily activities.","chunks":["Volunteers assist older adults with daily activities."],"options":["assist","transformed","perform","address"],"note":"assist 為較正式的「協助」；assist someone with something，或 assist someone in doing something。","coll":"Teachers assist students with problems.","answer":"assist"},{"base":"help","advanced":"contribute to","cn":"運動有助於健康。","basic":"Exercise helps improve our health.","up":"Exercise ____ good health.","cn2":"良好的溝通有助於建立信任。","basic2":"Good communication helps build trust.","chunks":["Good communication contributes to building trust."],"options":["assist","contributes to","reflect on","triggered"],"note":"contribute to 表示「有助於、促成」；to 是介系詞，後接名詞或 V-ing。","coll":"Exercise contributes to good health.","answer":"contributes to"},{"base":"make","advanced":"enable","cn":"網路使我們能隨地學習。","basic":"The Internet makes it possible for us to learn anywhere.","up":"The Internet ____ us to learn anywhere.","cn2":"線上課程讓偏遠地區的學生能獲得教育資源。","basic2":"Online courses make it possible for students in remote areas to access educational resources.","chunks":["Online courses enable students in remote areas to access educational resources."],"options":["promote","utilize","enables","acquire"],"note":"enable 表示「使……能夠」；常用 enable someone to do something。","coll":"The Internet enables us to learn anywhere.","answer":"enables"},{"base":"make","advanced":"result in","cn":"暴風雨造成嚴重損害。","basic":"The storm caused serious damage.","up":"The storm ____ serious damage.","cn2":"缺乏睡眠可能導致注意力不集中。","basic2":"A lack of sleep can cause poor concentration.","chunks":["A lack of sleep can result in poor concentration."],"options":["encounter","transformed","perform","resulted in"],"note":"result in 表示「導致、造成」；後接結果。注意 result from 表示「起因於」。","coll":"The storm resulted in serious damage.","answer":"resulted in"},{"base":"change","advanced":"transform","cn":"科技改變了我們的生活。","basic":"Technology has changed our lives.","up":"Technology has ____ our lives.","cn2":"這次經驗改變了她對失敗的看法。","basic2":"The experience changed her view of failure.","chunks":["The experience transformed her view of failure."],"options":["transformed","strengthen","reflect on","triggered"],"note":"transform 強調顯著改變；常見 transform lives / transform education。","coll":"Technology has transformed our lives.","answer":"transformed"},{"base":"grow","advanced":"increase","cn":"人口迅速增加。","basic":"The population has grown rapidly.","up":"The population has ____ rapidly.","cn2":"近年來線上購物需求持續增加。","basic2":"Demand for online shopping has grown in recent years.","chunks":["Demand for online shopping has increased in recent years."],"options":["promote","increased","select","acquire"],"note":"increase 表示數量、程度增加；可作動詞或名詞。","coll":"The population has increased rapidly.","answer":"increased"},{"base":"try","advanced":"attempt","cn":"他嘗試獨自解決問題。","basic":"He tried to solve the problem alone.","up":"He ____ to solve the problem alone.","cn2":"她試著在比賽前控制緊張情緒。","basic2":"She tried to manage her nerves before the competition.","chunks":["She attempted to manage her nerves before the competition."],"options":["encounter","resulted in","attempted","initiated"],"note":"attempt to do something 表示「嘗試做某事」，語氣比 try 稍正式。","coll":"He attempted to solve the problem alone.","answer":"attempted"},{"base":"choose","advanced":"select","cn":"學生可以選擇喜歡的課程。","basic":"Students can choose courses based on their interests.","up":"Students can ____ courses based on their interests.","cn2":"請從清單中選出三項活動。","basic2":"Please choose three activities from the list.","chunks":["Please select three activities from the list."],"options":["worsen","strengthen","reflect on","select"],"note":"select 表示選擇、挑選；常用 select courses / select an option。","coll":"Students can select courses based on their interests.","answer":"select"},{"base":"use","advanced":"utilize","cn":"我們應善用資源。","basic":"We should use available resources effectively.","up":"We should ____ available resources effectively.","cn2":"我們可以利用科技提高學習效率。","basic2":"We can use technology to improve learning efficiency.","chunks":["We can utilize technology to improve learning efficiency."],"options":["utilize","establish","attempted","acquire"],"note":"utilize 表示運用資源或方法；不必在所有情況下取代 use。","coll":"We should utilize available resources effectively.","answer":"utilize"},{"base":"think","advanced":"believe","cn":"我認為努力能帶來成功。","basic":"I think effort leads to success.","up":"I ____ effort leads to success.","cn2":"我認為每個人都應該受到公平對待。","basic2":"I think everyone deserves fair treatment.","chunks":["I believe everyone deserves fair treatment."],"options":["encounter","believe","enables","initiated"],"note":"believe that ... 可用於提出個人看法或信念。","coll":"I believe effort leads to success.","answer":"believe"},{"base":"think","advanced":"argue","cn":"有人主張校服是必要的。","basic":"Some people think school uniforms are necessary.","up":"Some people ____ that school uniforms are necessary.","cn2":"一些教育工作者主張學生需要更多休息時間。","basic2":"Some educators think students need more time to rest.","chunks":["Some educators argue that students need more time to rest."],"options":["worsen","strengthen","argue","believe"],"note":"argue that ... 用來提出論點或主張，不只是「想一想」。","coll":"Some people argue that school uniforms are necessary.","answer":"argue"},{"base":"think","advanced":"reflect on","cn":"我們應仔細反思自己的選擇。","basic":"We should think carefully about our choices.","up":"We should ____ our choices carefully.","cn2":"寫日記讓她能反思自己的進步。","basic2":"Keeping a journal helps her think about her progress.","chunks":["Keeping a journal helps her reflect on her progress."],"options":["inform","establish","attempted","reflect on"],"note":"reflect on 表示回顧、反思；常用 reflect on choices / mistakes。","coll":"We should reflect on our choices carefully.","answer":"reflect on"},{"base":"know","advanced":"be aware of","cn":"我們應了解風險。","basic":"We should know about the risks.","up":"We should ____ the risks.","cn2":"出發前必須了解天氣風險。","basic2":"We must know about the weather risks before leaving.","chunks":["We must be aware of the weather risks before leaving."],"options":["be aware of","maintain","enables","initiated"],"note":"be aware of 表示察覺或意識到；of 後接名詞或 V-ing。","coll":"We should be aware of the risks.","answer":"be aware of"},{"base":"show","advanced":"demonstrate","cn":"他的行動展現責任感。","basic":"His actions showed a strong sense of responsibility.","up":"His actions ____ a strong sense of responsibility.","cn2":"研究結果顯示睡眠與記憶力的關聯。","basic2":"The findings showed a link between sleep and memory.","chunks":["The findings demonstrated a link between sleep and memory."],"options":["worsen","demonstrated","comprehend","believe"],"note":"demonstrate 表示清楚展現或證明；常見 demonstrate responsibility。","coll":"His actions demonstrated a strong sense of responsibility.","answer":"demonstrated"},{"base":"chance","advanced":"opportunity","cn":"她獲得出國留學的機會。","basic":"She got the chance to study abroad.","up":"She got the ____ to study abroad.","cn2":"這份實習提供了學習機會。","basic2":"The internship gave her a chance to learn new skills.","chunks":["The internship gave her an opportunity to learn new skills."],"options":["issues","drawback","opportunity","benefits"],"note":"opportunity 表示機會；常用 an opportunity to do something。","coll":"She got the opportunity to study abroad.","answer":"opportunity"},{"base":"problem","advanced":"issue","cn":"環境問題日益嚴重。","basic":"Environmental problems are becoming serious.","up":"Environmental ____ are becoming serious.","cn2":"心理健康是學校應關注的議題。","basic2":"Mental health is a problem that schools should pay attention to.","chunks":["Mental health is an issue that schools should pay attention to."],"options":["obstacle","opportunity","benefits","issues"],"note":"issue 可表示值得討論或處理的問題；常見 environmental issues。","coll":"Environmental issues are becoming serious.","answer":"issues"},{"base":"start","advanced":"initiate","cn":"學校啟動回收計畫。","basic":"The school started a recycling program.","up":"The school ____ a recycling program.","cn2":"社區發起了一項節能活動。","basic2":"The community started an energy-saving campaign.","chunks":["The community initiated an energy-saving campaign."],"options":["initiated","enhance","comprehend","believe"],"note":"initiate 表示發起、啟動；常見 initiate a program / campaign。","coll":"The school initiated a recycling program.","answer":"initiated"},{"base":"do","advanced":"perform","cn":"學生每天執行各種任務。","basic":"Students do various tasks every day.","up":"Students ____ various tasks every day.","cn2":"醫護人員在緊急情況下履行重要職責。","basic2":"Medical workers carry out important duties during emergencies.","chunks":["Medical workers perform important duties during emergencies."],"options":["inform","perform","resolve","increased"],"note":"perform 表示執行任務、履行職責；常見 perform tasks / duties。","coll":"Students perform various tasks every day.","answer":"perform"},{"base":"say","advanced":"remark","cn":"他評論說計畫很棒。","basic":"He said that the plan was excellent.","up":"He ____ that the plan was excellent.","cn2":"她評論說這項改變有助於學生學習。","basic2":"She said that the change would help students learn.","chunks":["She remarked that the change would help students learn."],"options":["be aware of","maintain","remarked","contributes to"],"note":"remark that ... 表示評論、提及；比 say 更強調發表意見。","coll":"He remarked that the plan was excellent.","answer":"remarked"},{"base":"tell","advanced":"inform","cn":"老師通知學生這項變動。","basic":"Teachers tell students about the changes.","up":"Teachers ____ students of the changes.","cn2":"學校將通知家長新的活動時間。","basic2":"The school will tell parents about the new event schedule.","chunks":["The school will inform parents of the new event schedule."],"options":["utilize","enhance","comprehend","inform"],"note":"inform someone of/about something 表示通知某人某事。","coll":"Teachers inform students of the changes.","answer":"inform"},{"base":"very important","advanced":"crucial","cn":"教育扮演關鍵角色。","basic":"Education plays a very important role in our lives.","up":"Education plays a ____ role in our lives.","cn2":"家長支持對孩子成長至關重要。","basic2":"Parental support plays a very important role in children's development.","chunks":["Parental support plays a crucial role in children's development."],"options":["crucial","valuable","numerous","essential"],"note":"crucial 表示關鍵、極重要；常見 play a crucial role in。","coll":"Education plays a crucial role in our lives.","answer":"crucial"},{"base":"serious","advanced":"severe","cn":"空氣污染已成為嚴重的隱憂。","basic":"Air pollution has become a serious concern.","up":"Air pollution has become a ____ concern.","cn2":"颱風對沿海地區造成嚴重損害。","basic2":"The typhoon caused serious damage to coastal areas.","chunks":["The typhoon caused severe damage to coastal areas."],"options":["sufficient","severe","significant","widespread"],"note":"severe 表示嚴重的；常搭配 pollution、damage、shortages。","coll":"Air pollution has become a severe problem.","answer":"severe"},{"base":"difficult","advanced":"challenging","cn":"學習新語言很有挑戰性。","basic":"Learning a new language can be difficult.","up":"Learning a new language can be ____.","cn2":"快速適應新環境可能很困難。","basic2":"Adjusting to a new environment quickly can be difficult.","chunks":["Adjusting to a new environment quickly can be challenging."],"options":["numerous","essential","challenging","valuable"],"note":"challenging 表示有挑戰性的；可形容任務或學習經驗。","coll":"Learning a new language can be challenging.","answer":"challenging"},{"base":"useful","advanced":"valuable","cn":"志工服務提供寶貴經驗。","basic":"Volunteering provides useful experience.","up":"Volunteering provides ____ experience.","cn2":"老師的回饋提供寶貴指引。","basic2":"The teacher's feedback offered useful guidance.","chunks":["The teacher's feedback offered valuable guidance."],"options":["significant","widespread","sufficient","valuable"],"note":"valuable 表示有價值的；常搭配 experience / advice。","coll":"Volunteering provides valuable experience.","answer":"valuable"},{"base":"enough","advanced":"sufficient","cn":"學生需要充足睡眠。","basic":"Students need enough sleep.","up":"Students need ____ sleep.","cn2":"社區沒有足夠的乾淨飲用水。","basic2":"The community does not have enough clean drinking water.","chunks":["The community does not have sufficient clean drinking water."],"options":["sufficient","challenging","numerous","essential"],"note":"sufficient 表示足夠的；常搭配 sleep、time、resources。","coll":"Students need sufficient sleep.","answer":"sufficient"},{"base":"clear","advanced":"evident","cn":"運動的益處顯而易見。","basic":"The benefits of exercise are clear.","up":"The benefits of exercise are ____.","cn2":"結果明顯顯示這項方法有效。","basic2":"It is clear from the results that the method works.","chunks":["It is evident from the results that the method works."],"options":["valuable","evident","significant","widespread"],"note":"evident 表示明顯的；常見 be evident / become evident。","coll":"The benefits of exercise are evident.","answer":"evident"},{"base":"possible","advanced":"feasible","cn":"這項計畫是可行的。","basic":"It is possible to carry out this plan.","up":"This plan is ____.","cn2":"在有限預算下這項提案仍可行。","basic2":"It is still possible to carry out the proposal with a limited budget.","chunks":["The proposal is still feasible with a limited budget."],"options":["numerous","essential","feasible","challenging"],"note":"feasible 表示實際可行；常用於計畫、方案。","coll":"This plan is feasible.","answer":"feasible"},{"base":"common","advanced":"widespread","cn":"青少年使用智慧型手機很普遍。","basic":"Smartphone use is common among teenagers.","up":"Smartphone use is ____ among teenagers.","cn2":"網路霸凌在許多社群平台上相當普遍。","basic2":"Cyberbullying is common on many social media platforms.","chunks":["Cyberbullying is widespread on many social media platforms."],"options":["significant","feasible","valuable","widespread"],"note":"widespread 表示廣泛存在、普遍的；常搭配 use / concern。","coll":"Smartphone use is widespread among teenagers.","answer":"widespread"},{"base":"different","advanced":"diverse","cn":"學生來自多元背景。","basic":"Students come from different backgrounds.","up":"Students come from ____ backgrounds.","cn2":"團隊成員有不同觀點。","basic2":"Team members have different perspectives.","chunks":["Team members have diverse perspectives."],"options":["diverse","challenging","numerous","essential"],"note":"diverse 表示多元、多樣；常見 diverse backgrounds。","coll":"Students come from diverse backgrounds.","answer":"diverse"},{"base":"lasting","advanced":"long-lasting","cn":"閱讀有長遠的益處。","basic":"Reading can have lasting benefits.","up":"Reading can have ____ benefits.","cn2":"這項活動帶來持久的正面影響。","basic2":"The project had a lasting positive effect on the community.","chunks":["The project had a long-lasting positive effect on the community."],"options":["valuable","long-lasting","significant","feasible"],"note":"long-lasting 表示持久的；常見 long-lasting benefits / effects。","coll":"Reading can have long-lasting benefits.","answer":"long-lasting"},{"base":"get","advanced":"acquire","cn":"學生能透過閱讀獲取知識。","basic":"Students can gain knowledge through reading.","up":"Students can ____ knowledge through reading.","cn2":"孩子能透過遊戲獲得社交技能。","basic2":"Children can get new social skills through play.","chunks":["Children can acquire new social skills through play."],"options":["assist","reflect on","acquire","triggered"],"note":"acquire 表示獲得知識或技能；常見 acquire knowledge / skills。","coll":"Students can acquire knowledge through reading.","answer":"acquire"},{"base":"get","advanced":"obtain","cn":"我們可以在線上取得資訊。","basic":"We can get information online.","up":"We can ____ information online.","cn2":"申請人必須先取得家長同意。","basic2":"Applicants must get parental permission first.","chunks":["Applicants must obtain parental permission first."],"options":["promote","select","acquire","obtain"],"note":"obtain 表示取得；常見 obtain information / permission。","coll":"We can obtain information online.","answer":"obtain"},{"base":"make better","advanced":"enhance","cn":"運動能提升生活品質。","basic":"Exercise can make our quality of life better.","up":"Exercise can ____ our quality of life.","cn2":"閱讀不同觀點能提升理解力。","basic2":"Reading different viewpoints can make our understanding better.","chunks":["Reading different viewpoints can enhance our understanding."],"options":["enhance","resulted in","initiated","address"],"note":"enhance 表示提升品質或能力；常見 enhance quality of life。","coll":"Exercise can enhance our quality of life.","answer":"enhance"},{"base":"make worse","advanced":"worsen","cn":"壓力可能使健康問題惡化。","basic":"Stress may make existing health problems worse.","up":"Stress may ____ existing health problems.","cn2":"不實資訊可能使社會分歧惡化。","basic2":"False information may make social divisions worse.","chunks":["False information may worsen social divisions."],"options":["assist","worsen","argue","triggered"],"note":"worsen 表示使情況惡化；常見 worsen a problem。","coll":"Stress may worsen existing health problems.","answer":"worsen"},{"base":"cause","advanced":"trigger","cn":"新聞引發熱烈討論。","basic":"The news caused a heated discussion.","up":"The news ____ a heated discussion.","cn2":"影片引發了網路隱私的討論。","basic2":"The video caused a discussion about online privacy.","chunks":["The video triggered a discussion about online privacy."],"options":["promote","select","triggered","inform"],"note":"trigger 表示引發事件或反應；常見 trigger a discussion。","coll":"The news triggered a heated discussion.","answer":"triggered"},{"base":"reduce","advanced":"minimize","cn":"我們應盡量減少浪費。","basic":"We should reduce unnecessary waste as much as possible.","up":"We should ____ unnecessary waste.","cn2":"提早規劃能減少不必要的開支。","basic2":"Planning ahead can reduce unnecessary expenses as much as possible.","chunks":["Planning ahead can minimize unnecessary expenses."],"options":["encounter","resulted in","initiated","minimize"],"note":"minimize 表示盡量降低；常見 minimize waste / risks。","coll":"We should minimize unnecessary waste.","answer":"minimize"},{"base":"keep","advanced":"maintain","cn":"維持健康生活方式很重要。","basic":"It is important to follow a healthy lifestyle.","up":"It is important to ____ a healthy lifestyle.","cn2":"忙碌時也應維持規律的睡眠習慣。","basic2":"We should keep regular sleeping habits even when busy.","chunks":["We should maintain regular sleeping habits even when busy."],"options":["maintain","strengthen","argue","worsen"],"note":"maintain 表示維持；常見 maintain a healthy lifestyle。","coll":"It is important to maintain a healthy lifestyle.","answer":"maintain"},{"base":"face","advanced":"encounter","cn":"青少年經常遇到困難。","basic":"Teenagers often face difficulties.","up":"Teenagers often ____ difficulties.","cn2":"旅行時可能遇到意想不到的挑戰。","basic2":"We may face unexpected challenges while traveling.","chunks":["We may encounter unexpected challenges while traveling."],"options":["promote","encounter","attempted","inform"],"note":"encounter 表示遇到問題或困難；常見 encounter difficulties。","coll":"Teenagers often encounter difficulties.","answer":"encounter"},{"base":"deal with","advanced":"address","cn":"學校應處理這個問題。","basic":"Schools should deal with this issue.","up":"Schools should ____ this issue.","cn2":"政府必須處理公共運輸不足的問題。","basic2":"The government must deal with the lack of public transportation.","chunks":["The government must address the lack of public transportation."],"options":["maintain","resulted in","address","demonstrated"],"note":"address 表示著手處理問題；常見 address an issue。","coll":"Schools should address this issue.","answer":"address"},{"base":"solve","advanced":"resolve","cn":"溝通有助於化解衝突。","basic":"Communication can help solve conflicts.","up":"Communication can help ____ conflicts.","cn2":"雙方透過對話解決誤會。","basic2":"The two sides solved the misunderstanding through dialogue.","chunks":["The two sides resolved the misunderstanding through dialogue."],"options":["enhance","strengthen","argue","resolve"],"note":"resolve 表示解決爭端或問題；常見 resolve conflicts。","coll":"Communication can help resolve conflicts.","answer":"resolve"},{"base":"build","advanced":"establish","cn":"我們應建立良好讀書習慣。","basic":"We should build good study habits.","up":"We should ____ good study habits.","cn2":"學校應建立明確的反霸凌規範。","basic2":"Schools should build clear rules against bullying.","chunks":["Schools should establish clear rules against bullying."],"options":["establish","resolve","attempted","inform"],"note":"establish 表示建立制度或習慣；常見 establish good habits。","coll":"We should establish good study habits.","answer":"establish"},{"base":"encourage","advanced":"promote","cn":"閱讀能促進批判性思考。","basic":"Reading can encourage critical thinking.","up":"Reading can ____ critical thinking.","cn2":"團隊活動能促進學生合作。","basic2":"Group activities can encourage cooperation among students.","chunks":["Group activities can promote cooperation among students."],"options":["maintain","promote","enables","demonstrated"],"note":"promote 表示促進發展；常見 promote critical thinking。","coll":"Reading can promote critical thinking.","answer":"promote"},{"base":"protect","advanced":"preserve","cn":"我們必須保護自然資源。","basic":"We must protect natural resources.","up":"We must ____ natural resources.","cn2":"我們應保存當地文化傳統。","basic2":"We should protect local cultural traditions.","chunks":["We should preserve local cultural traditions."],"options":["enhance","strengthen","preserve","believe"],"note":"preserve 表示保存、維護；常見 preserve natural resources。","coll":"We must preserve natural resources.","answer":"preserve"},{"base":"understand","advanced":"comprehend","cn":"學生需要理解主旨。","basic":"Students need to understand the main idea.","up":"Students need to ____ the main idea.","cn2":"文章核心概念不容易理解。","basic2":"The main concept of the article is not easy to understand.","chunks":["The main concept of the article is not easy to comprehend."],"options":["remarked","resolve","attempted","comprehend"],"note":"comprehend 表示理解；常見 comprehend the main idea。","coll":"Students need to comprehend the main idea.","answer":"comprehend"},{"base":"improve","advanced":"strengthen","cn":"團隊合作能強化關係。","basic":"Teamwork can improve relationships.","up":"Teamwork can ____ relationships.","cn2":"共同克服挑戰能強化彼此信任。","basic2":"Overcoming challenges together can improve mutual trust.","chunks":["Overcoming challenges together can strengthen mutual trust."],"options":["strengthen","minimize","enables","demonstrated"],"note":"strengthen 表示強化；常見 strengthen relationships。","coll":"Teamwork can strengthen relationships.","answer":"strengthen"},{"base":"advantage","advanced":"benefit","cn":"線上學習有許多益處。","basic":"Online learning offers many advantages.","up":"Online learning offers many ____.","cn2":"彈性安排是線上課程的一大優點。","basic2":"Flexible scheduling is a major advantage of online courses.","chunks":["Flexible scheduling is a major benefit of online courses."],"options":["issues","benefits","capabilities","opportunity"],"note":"benefit 表示益處；常見 the benefits of online learning。","coll":"Online learning offers many benefits.","answer":"benefits"},{"base":"disadvantage","advanced":"drawback","cn":"一項主要缺點是成本高。","basic":"One major disadvantage is the high cost.","up":"One major ____ is the high cost.","cn2":"缺乏面對面互動是遠距學習的缺點。","basic2":"Limited face-to-face interaction is a disadvantage of distance learning.","chunks":["Limited face-to-face interaction is a drawback of distance learning."],"options":["opportunity","issues","drawback","approach"],"note":"drawback 表示缺點、不利之處；常見 a major drawback。","coll":"One major drawback is the high cost.","answer":"drawback"},{"base":"result","advanced":"consequence","cn":"每個決定都有其後果。","basic":"Every decision can have results.","up":"Every decision has its ____.","cn2":"忽視小問題可能帶來嚴重後果。","basic2":"Ignoring small problems can lead to serious results.","chunks":["Ignoring small problems can have serious consequences."],"options":["issues","opportunity","benefits","consequences"],"note":"consequence 表示後果；常見 the consequences of a decision。","coll":"Every decision has its consequences.","answer":"consequences"},{"base":"reason","advanced":"factor","cn":"壓力是影響睡眠的因素。","basic":"Stress is a major reason for poor sleep.","up":"Stress is a major ____ affecting sleep.","cn2":"家庭支持是影響青少年自信的因素。","basic2":"Family support is an important reason why teenagers develop confidence.","chunks":["Family support is an important factor in teenagers' confidence."],"options":["factor","obstacle","opportunity","issues"],"note":"factor 表示影響因素；常見 a major factor affecting sleep。","coll":"Stress is a major factor affecting sleep.","answer":"factor"},{"base":"way","advanced":"approach","cn":"我們需要不同方式處理問題。","basic":"We need a different way to deal with this problem.","up":"We need a different ____ to this problem.","cn2":"合作是解決社區問題的有效方式。","basic2":"Working together is an effective way to solve community problems.","chunks":["Working together is an effective approach to solving community problems."],"options":["issues","approach","consequences","opportunity"],"note":"approach 表示處理問題的方法；常見 an approach to a problem。","coll":"We need a different approach to this problem.","answer":"approach"},{"base":"goal","advanced":"objective","cn":"主要目標是減少浪費。","basic":"Our main goal is to reduce waste.","up":"Our main ____ is to reduce waste.","cn2":"活動目標是提升環保意識。","basic2":"The main goal of the campaign is to raise environmental awareness.","chunks":["The main objective of the campaign is to raise environmental awareness."],"options":["issues","benefits","objective","opportunity"],"note":"objective 表示目標；常見 the main objective is to ...。","coll":"Our main objective is to reduce waste.","answer":"objective"},{"base":"effect","advanced":"impact","cn":"科技對社會有深遠影響。","basic":"Technology has a profound effect on society.","up":"Technology has a profound ____ on society.","cn2":"社群媒體對青少年自我形象有很大影響。","basic2":"Social media has a strong effect on teenagers' self-image.","chunks":["Social media has a strong impact on teenagers' self-image."],"options":["objective","opportunity","issues","impact"],"note":"impact 表示影響；常見 have an impact on。","coll":"Technology has a profound impact on society.","answer":"impact"},{"base":"difficulty","advanced":"obstacle","cn":"恐懼可能成為成功的阻礙。","basic":"Fear can become a barrier to success.","up":"Fear can become an ____ to success.","cn2":"缺乏自信不應成為追求夢想的阻礙。","basic2":"A lack of confidence should not be a barrier to pursuing dreams.","chunks":["A lack of confidence should not be an obstacle to pursuing dreams."],"options":["obstacle","drawback","opportunity","issues"],"note":"obstacle 表示障礙；常見 an obstacle to success。","coll":"Fear can become an obstacle to success.","answer":"obstacle"},{"base":"ability","advanced":"capability","cn":"科技能提升學生學習能力。","basic":"Technology can improve students' learning abilities.","up":"Technology can improve students' learning ____.","cn2":"訓練可以提升團隊解決問題的能力。","basic2":"The training can improve the team's ability to solve problems.","chunks":["The training can strengthen the team's capability to solve problems."],"options":["issues","capabilities","alternative","opportunity"],"note":"capability 表示能力；常見 learning capabilities。","coll":"Technology can improve students' learning capabilities.","answer":"capabilities"},{"base":"choice","advanced":"alternative","cn":"大眾運輸是開車以外的選擇。","basic":"Public transportation is another option instead of driving.","up":"Public transportation is an ____ to driving.","cn2":"騎自行車是短程通勤的另一種選擇。","basic2":"Cycling is another choice for short trips.","chunks":["Cycling is an alternative to driving for short trips."],"options":["opportunity","issues","alternative","approach"],"note":"alternative 表示另一種選擇；常見 an alternative to driving。","coll":"Public transportation is an alternative to driving.","answer":"alternative"}];
-const KEY='gsat-vocab-v13-full';let state={};try{state=JSON.parse(localStorage.getItem(KEY))||{}}catch(e){}let onlyWrong=false,font=20,currentRound=null;const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const get=k=>state[k]||{tries:0,done:false,firstWrong:false,chosen:[],message:'',shuffle:0,shown:false,writing:''};function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}function sent(label,txt,style){return '<div class="sentence '+style+'"><div class="sentence-label">'+label+'</div><div class="en">'+txt+'</div></div>'}function orderFor(i,n,round=0){let a=Array.from({length:n},(_,j)=>j);for(let j=n-1;j>0;j--){let swap=(i*5+j*3+1+round*7)%(j+1);[a[j],a[swap]]=[a[swap],a[j]]}if(a.every((v,j)=>v===j)&&n>1)[a[0],a[1]]=[a[1],a[0]];return a}
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>學測英文作文｜字詞升級練習 V14（測試版）</title><style>
+:root{--bg:#f5f3ef;--ink:#292929;--sub:#56534f;--line:#d9d5ce;--basic:#eae7e2;--upgrade:#dedbd5;--button:#fff;--accent:#575b55;--good:#2d6b51;--font:20px}body.dark{--bg:#242320;--ink:#f0ede7;--sub:#c7c1b7;--line:#4b4843;--basic:#35332f;--upgrade:#46423c;--button:#34322e;--accent:#d5c8b3;--good:#9ed8b7}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif}main{max-width:850px;margin:auto;padding:18px 22px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.tools{display:flex;gap:7px}button{cursor:pointer}.tool,.action{background:var(--button);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:9px 13px;font-size:15px}.eyebrow{font-size:13px;color:var(--sub)}h1{font-size:28px;margin:10px 0 6px}.subtitle{font-size:16px;color:var(--sub)}.progress{display:flex;justify-content:space-between;font-size:15px;margin:14px 0 7px}.bar{height:7px;background:var(--line);border-radius:6px;overflow:hidden}.fill{height:100%;background:var(--accent);width:0}.group{padding:13px 0 15px;border-bottom:1px solid var(--line)}.group-title{font-size:clamp(17px,var(--font),26px);font-weight:700;margin-bottom:8px}.exercise{margin-bottom:12px}.ex-title{font-size:17px;font-weight:500;margin-bottom:4px}.cn{font-size:clamp(18px,var(--font),28px);line-height:1.5;margin:2px 0}.en{font:var(--font)/1.6 Arial,sans-serif;overflow-wrap:anywhere}.stem-basic{color:var(--sub);margin:0 0 7px;line-height:1.45}.sentence{padding:8px 12px;border-radius:9px;margin:5px 0}.basic{background:var(--basic)}.upgrade,.build{background:var(--upgrade)}.sentence-label{font-size:17px;color:var(--sub);margin-bottom:2px}.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:7px}.choice,.chunk{border:1px solid var(--line);border-radius:9px;background:var(--button);color:var(--ink);font:var(--font) Arial,sans-serif;padding:9px;min-height:48px}.choice:disabled,.chunk:disabled{opacity:.8;cursor:default}.choice.selected{outline:2px solid var(--good);outline-offset:1px}.choice.incorrect{outline:2px solid #ad6c53;outline-offset:1px}.build{min-height:48px;border-radius:9px;padding:8px;display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:7px}.placeholder{font-size:17px;color:var(--sub)}.pool{display:flex;gap:7px;flex-wrap:wrap;margin:6px 0}.build .chunk{background:var(--basic)}.row-actions,.exercise-actions,.global-actions{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:6px}.row-actions{flex-wrap:nowrap}.row-actions .action{flex:0 0 auto;white-space:nowrap}@media(max-width:560px){.row-actions{gap:5px}.row-actions .action{font-size:13px;padding:9px 7px}}.global-actions{margin-top:8px}.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}.feedback{font-size:16px;font-weight:600;color:var(--good);margin-top:5px}.feedback.retry{color:var(--sub)}details{margin-top:6px;font-size:var(--font);line-height:1.65}summary{cursor:pointer;color:var(--accent);font-weight:600}details p{margin:6px 0}.footer{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.round-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}.round-card{display:block;width:100%;text-align:left;padding:17px;border:1px solid var(--line);border-radius:13px;background:var(--button);color:var(--ink);font:inherit}.round-card strong{font-size:20px}.round-card small{display:block;color:var(--sub);margin-top:8px;font-size:14px}.round-meter{height:6px;border-radius:8px;background:var(--line);overflow:hidden;margin-top:12px}.round-meter span{display:block;height:100%;background:var(--accent)}@media(max-width:560px){.round-grid{grid-template-columns:1fr}}.end{font-size:17px;margin:15px 0;color:var(--sub)}@media(max-width:560px){main{padding:14px 14px 55px}h1{font-size:23px}.cn{font-size:var(--font)}.group{padding:12px 0 14px}.sentence{padding:8px 10px}}
+.choice{overflow-wrap:anywhere}button:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--good);outline-offset:3px}#saveWarning:not(:empty){margin:14px 0;padding:12px;border:2px solid #ad6c53;border-radius:9px;font-size:var(--font)}.option-analysis{margin-top:12px;padding-top:9px;border-top:1px solid var(--line)}.option-analysis p{padding:3px 0}.option-caution{color:var(--sub);font-size:.85em}</style><style>.write-area{width:100%;min-height:110px;border:1px solid #9aa1a8;border-radius:12px;background:transparent;color:inherit;padding:12px;font:var(--font)/1.7 Arial,sans-serif;box-sizing:border-box}.write-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.write-answer{padding:14px;margin-top:12px;border-radius:10px;background:rgba(120,150,120,.13);line-height:1.8}.write-tip{font-size:clamp(16px,calc(var(--font) * .9),25px);opacity:.8;margin:8px 0}.write-target{font-weight:700;margin:10px 0}</style></head><body><main><div class="top"><div class="eyebrow">GSAT WRITING LAB</div><div class="tools"><button class="tool" id="minus">A−</button><button class="tool" id="plus">A+</button><button class="tool" id="theme">深色模式</button></div></div><h1>學測英文作文｜字詞升級練習 V14（測試版）</h1><div class="subtitle">常用字詞升級｜60 組・120 題</div><p class="subtitle">學習提醒：字詞升級並非機械式替換，而是提供另一種表達選擇。實際使用時，仍須考慮語意、語境與搭配。</p><div id="saveWarning" role="alert" aria-live="assertive"></div><div class="write-actions"><button class="action" id="exportProgress">匯出完整備份</button><button class="action" id="retrySave" hidden>重試儲存</button><button class="action" id="recoverStore" hidden>備份後復原儲存</button></div><div id="home"></div><div id="practice" hidden><div class="top"><button class="action" id="backHome">← 返回回次首頁</button><strong id="roundTitle"></strong></div><div class="progress"><span id="status"></span><span id="remaining"></span></div><div class="bar"><div class="fill" id="fill"></div></div><div class="global-actions"><button class="action" data-reset-all>本回全部清除重做</button></div><div id="list"></div><div id="end" class="end"></div><div class="footer"><button class="action" id="retry">重練錯題</button><button class="action" id="newRetry" hidden>開始新一輪重練</button><button class="action" id="reset">本回清除重做</button><button class="action" id="backBottom">返回回次首頁</button></div></div></main><script>
+const DATA=[
+  {
+    "base": "big",
+    "advanced": "significant",
+    "cn": "這個問題對青少年有很大的影響。",
+    "basic": "This issue has a big effect on teenagers.",
+    "up": "This issue has a ____ effect on teenagers.",
+    "cn2": "這項決定對我們的未來有重大影響。",
+    "basic2": "This decision has a big impact on our future.",
+    "chunks": [
+      "This decision",
+      "has a significant impact",
+      "on our future."
+    ],
+    "options": [
+      "significant",
+      "minor",
+      "temporary",
+      "negative"
+    ],
+    "note": "significant 強調影響、差異或重要性。 big effect 很自然；significant 在此強調影響程度或重要性，不表示所有 big 都能換用。",
+    "coll": "a significant impact / a significant difference",
+    "answer": "significant",
+    "optionDetails": [
+      {
+        "id": "g01-answer",
+        "text": "significant",
+        "meaning": "重大的",
+        "reason": "significant 強調影響、差異或重要性。 big effect 很自然；significant 在此強調影響程度或重要性，不表示所有 big 都能換用。 本題搭配：a significant impact / a significant difference",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g01-d1",
+        "text": "minor",
+        "meaning": "輕微的",
+        "reason": "minor effect 指輕微影響，與 big 的程度相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g01-d2",
+        "text": "temporary",
+        "meaning": "暫時的",
+        "reason": "temporary 說明持續時間，沒有保留影響很大的程度。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g01-d3",
+        "text": "negative",
+        "meaning": "負面的",
+        "reason": "negative 指影響方向，big 並未限定負面。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g01",
+    "contentRevision": "264b91034320758a"
+  },
+  {
+    "base": "necessary",
+    "advanced": "essential",
+    "cn": "充足的睡眠對維持健康是必要的。",
+    "basic": "Getting enough sleep is necessary for good health.",
+    "up": "Getting enough sleep is ____ for good health.",
+    "cn2": "規律練習對提升英語能力是必要的。",
+    "basic2": "Regular practice is necessary for improving English skills.",
+    "chunks": [
+      "Regular practice is essential for improving English skills."
+    ],
+    "options": [
+      "essential",
+      "optional",
+      "irrelevant",
+      "harmful"
+    ],
+    "note": "necessary 與 essential 在此均表必要條件；essential 強調不可或缺。不要把 important（重要）一律改成 essential。",
+    "coll": "essential to success / essential for health",
+    "answer": "essential",
+    "optionDetails": [
+      {
+        "id": "g02-answer",
+        "text": "essential",
+        "meaning": "必要的",
+        "reason": "necessary 與 essential 在此均表必要條件；essential 強調不可或缺。不要把 important（重要）一律改成 essential。 本題搭配：essential to success / essential for health",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g02-d1",
+        "text": "optional",
+        "meaning": "可選擇的",
+        "reason": "optional 表示可有可無，不保留 necessary 的必要性。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g02-d2",
+        "text": "irrelevant",
+        "meaning": "無關的",
+        "reason": "irrelevant 否定睡眠與健康的關聯。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g02-d3",
+        "text": "harmful",
+        "meaning": "有害的",
+        "reason": "harmful 表示造成傷害，與此處必要的正面條件不同。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g02",
+    "contentRevision": "a1ce68f37ea71581"
+  },
+  {
+    "base": "good",
+    "advanced": "beneficial",
+    "cn": "規律運動對心理健康有益。",
+    "basic": "Regular exercise is good for mental health.",
+    "up": "Regular exercise is ____ to mental health.",
+    "cn2": "閱讀對學生的語言發展有益。",
+    "basic2": "Reading is good for students’ language development.",
+    "chunks": [
+      "Reading",
+      "is beneficial to",
+      "students’ language development."
+    ],
+    "options": [
+      "beneficial",
+      "harmful",
+      "irrelevant",
+      "detrimental"
+    ],
+    "note": "beneficial 表示有益的，常搭配 be beneficial to。 good for 已是自然英文；beneficial to 聚焦助益，須一併調整介系詞。",
+    "coll": "beneficial to health / beneficial effects",
+    "answer": "beneficial",
+    "optionDetails": [
+      {
+        "id": "g03-answer",
+        "text": "beneficial",
+        "meaning": "有益的",
+        "reason": "beneficial 表示有益的，常搭配 be beneficial to。 good for 已是自然英文；beneficial to 聚焦助益，須一併調整介系詞。 本題搭配：beneficial to health / beneficial effects",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g03-d1",
+        "text": "harmful",
+        "meaning": "有害的",
+        "reason": "harmful to 語法自然，但意思與 good for 相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g03-d2",
+        "text": "irrelevant",
+        "meaning": "無關的",
+        "reason": "irrelevant to 表示無關，不保留對健康有益。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g03-d3",
+        "text": "detrimental",
+        "meaning": "不利的",
+        "reason": "detrimental to 表示造成不良影響，與原句方向相反。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g03",
+    "contentRevision": "d93a064f66c4d4e1"
+  },
+  {
+    "base": "bad",
+    "advanced": "harmful",
+    "cn": "吸入污染空氣對健康有害。",
+    "basic": "Breathing polluted air is bad for our health.",
+    "up": "Breathing polluted air is ____ to our health.",
+    "cn2": "長時間久坐對身體有害。",
+    "basic2": "Sitting for long periods is bad for the body.",
+    "chunks": [
+      "Sitting for long periods",
+      "is harmful to",
+      "the body."
+    ],
+    "options": [
+      "harmful",
+      "beneficial",
+      "irrelevant",
+      "vital"
+    ],
+    "note": "harmful 強調造成傷害，常搭配 be harmful to。 bad for 在此指有害，不能把所有 bad（如品質差）都改為 harmful。",
+    "coll": "harmful to the environment / harmful effects",
+    "answer": "harmful",
+    "optionDetails": [
+      {
+        "id": "g04-answer",
+        "text": "harmful",
+        "meaning": "有害的",
+        "reason": "harmful 強調造成傷害，常搭配 be harmful to。 bad for 在此指有害，不能把所有 bad（如品質差）都改為 harmful。 本題搭配：harmful to the environment / harmful effects",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g04-d1",
+        "text": "beneficial",
+        "meaning": "有益的",
+        "reason": "beneficial to 搭配正確，但與 bad for 的負面影響相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g04-d2",
+        "text": "irrelevant",
+        "meaning": "無關的",
+        "reason": "irrelevant to 表示無關，原句則明說有害。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g04-d3",
+        "text": "vital",
+        "meaning": "至關重要的",
+        "reason": "vital to 表必要性，不表示吸入污染空氣造成傷害。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g04",
+    "contentRevision": "8da32d4b85864091"
+  },
+  {
+    "base": "many",
+    "advanced": "numerous",
+    "cn": "學生有許多機會學習新技能。",
+    "basic": "Students have many opportunities to learn new skills.",
+    "up": "Students have ____ opportunities to learn new skills.",
+    "cn2": "這個城市有許多公共圖書館。",
+    "basic2": "This city has many public libraries.",
+    "chunks": [
+      "This city",
+      "has numerous",
+      "public libraries."
+    ],
+    "options": [
+      "numerous",
+      "limited",
+      "rare",
+      "valuable"
+    ],
+    "note": "numerous 修飾可數複數名詞。 numerous 表數量多，不適用不可數名詞；many 本身正確自然。",
+    "coll": "numerous opportunities / numerous reasons",
+    "answer": "numerous",
+    "optionDetails": [
+      {
+        "id": "g05-answer",
+        "text": "numerous",
+        "meaning": "許多的",
+        "reason": "numerous 修飾可數複數名詞。 numerous 表數量多，不適用不可數名詞；many 本身正確自然。 本題搭配：numerous opportunities / numerous reasons",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g05-d1",
+        "text": "limited",
+        "meaning": "有限的",
+        "reason": "limited opportunities 強調數量有限，不保留 many。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g05-d2",
+        "text": "rare",
+        "meaning": "罕見的",
+        "reason": "rare opportunities 強調機會少見，與 many 不同。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g05-d3",
+        "text": "valuable",
+        "meaning": "有價值的",
+        "reason": "valuable opportunities 很自然，但只談價值，不保留數量多。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g05",
+    "contentRevision": "3d914ac5469c8de2"
+  },
+  {
+    "base": "help",
+    "advanced": "assist",
+    "cn": "老師協助學生處理問題。",
+    "basic": "Teachers help students with problems.",
+    "up": "Teachers ____ students with problems.",
+    "cn2": "志工協助長者進行日常活動。",
+    "basic2": "Volunteers help older adults with daily activities.",
+    "chunks": [
+      "Volunteers assist older adults with daily activities."
+    ],
+    "options": [
+      "assist",
+      "burden",
+      "confront",
+      "provide"
+    ],
+    "note": "assist 為較正式的「協助」；assist someone with something，或 assist someone in doing something。",
+    "coll": "Teachers assist students with problems.",
+    "answer": "assist",
+    "optionDetails": [
+      {
+        "id": "g06-answer",
+        "text": "assist",
+        "meaning": "協助",
+        "reason": "assist 為較正式的「協助」；assist someone with something，或 assist someone in doing something。 本題搭配：Teachers assist students with problems.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g06-d1",
+        "text": "burden",
+        "meaning": "使負擔加重",
+        "reason": "burden students with problems 表示把問題加諸學生，方向與協助相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g06-d2",
+        "text": "confront",
+        "meaning": "使面對",
+        "reason": "confront students with problems 表使學生面對問題，不等於提供協助。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g06-d3",
+        "text": "provide",
+        "meaning": "提供",
+        "reason": "provide students with problems 表提供問題，未表示協助處理。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g06",
+    "contentRevision": "dc2b0ecc1a52f5aa"
+  },
+  {
+    "base": "help",
+    "advanced": "contribute to",
+    "cn": "運動有助於改善我們的健康。",
+    "basic": "Exercise helps improve our health.",
+    "up": "Exercise ____ improving our health.",
+    "cn2": "良好的溝通有助於建立信任。",
+    "basic2": "Good communication helps build trust.",
+    "chunks": [
+      "Good communication contributes to building trust."
+    ],
+    "options": [
+      "contributes to",
+      "interferes with",
+      "detracts from",
+      "depends on"
+    ],
+    "note": "contribute to 表示「有助於、促成」；to 是介系詞，後接名詞或 V-ing。",
+    "coll": "Exercise contributes to good health.",
+    "answer": "contributes to",
+    "optionDetails": [
+      {
+        "id": "g07-answer",
+        "text": "contributes to",
+        "meaning": "有助於",
+        "reason": "contribute to 表示「有助於、促成」；to 是介系詞，後接名詞或 V-ing。 本題搭配：Exercise contributes to good health.",
+        "correct": true,
+        "form": "第三人稱單數動詞／動詞片語"
+      },
+      {
+        "id": "g07-d1",
+        "text": "interferes with",
+        "meaning": "干擾",
+        "reason": "interferes with good health 表負面干擾，不保留有助健康。",
+        "correct": false,
+        "form": "第三人稱單數動詞／動詞片語"
+      },
+      {
+        "id": "g07-d2",
+        "text": "detracts from",
+        "meaning": "減損",
+        "reason": "detracts from good health 表減損健康，方向相反。",
+        "correct": false,
+        "form": "第三人稱單數動詞／動詞片語"
+      },
+      {
+        "id": "g07-d3",
+        "text": "depends on",
+        "meaning": "依賴",
+        "reason": "depends on good health 表運動依賴健康，把助益關係改成前提。",
+        "correct": false,
+        "form": "第三人稱單數動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g07",
+    "contentRevision": "0d09931219f72cd2"
+  },
+  {
+    "base": "make",
+    "advanced": "enable",
+    "cn": "網路使我們能隨地學習。",
+    "basic": "The Internet makes it possible for us to learn anywhere.",
+    "up": "The Internet ____ us to learn anywhere.",
+    "cn2": "線上課程讓偏遠地區的學生能獲得教育資源。",
+    "basic2": "Online courses make it possible for students in remote areas to access educational resources.",
+    "chunks": [
+      "Online courses enable students in remote areas to access educational resources."
+    ],
+    "options": [
+      "enables",
+      "forbids",
+      "requires",
+      "persuades"
+    ],
+    "note": "enable 表示「使……能夠」；常用 enable someone to do something。",
+    "coll": "The Internet enables us to learn anywhere.",
+    "answer": "enables",
+    "optionDetails": [
+      {
+        "id": "g08-answer",
+        "text": "enables",
+        "meaning": "使能夠",
+        "reason": "enable 表示「使……能夠」；常用 enable someone to do something。 本題搭配：The Internet enables us to learn anywhere.",
+        "correct": true,
+        "form": "第三人稱單數動詞／動詞片語"
+      },
+      {
+        "id": "g08-d1",
+        "text": "forbids",
+        "meaning": "禁止",
+        "reason": "forbids us to learn 語法可行，卻是禁止而非使學習成為可能。",
+        "correct": false,
+        "form": "第三人稱單數動詞／動詞片語"
+      },
+      {
+        "id": "g08-d2",
+        "text": "requires",
+        "meaning": "要求",
+        "reason": "requires us to learn 表要求，可能但不等於提供能力或條件。",
+        "correct": false,
+        "form": "第三人稱單數動詞／動詞片語"
+      },
+      {
+        "id": "g08-d3",
+        "text": "persuades",
+        "meaning": "說服",
+        "reason": "persuades us to learn 表說服，加入原句沒有的意願改變。",
+        "correct": false,
+        "form": "第三人稱單數動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g08",
+    "contentRevision": "0fb4722bb48db56e"
+  },
+  {
+    "base": "cause",
+    "advanced": "result in",
+    "cn": "暴風雨造成嚴重損害。",
+    "basic": "The storm caused serious damage.",
+    "up": "The storm ____ serious damage.",
+    "cn2": "缺乏睡眠可能導致注意力不集中。",
+    "basic2": "A lack of sleep can cause poor concentration.",
+    "chunks": [
+      "A lack of sleep can result in poor concentration."
+    ],
+    "options": [
+      "resulted in",
+      "prevented",
+      "reduced",
+      "revealed"
+    ],
+    "note": "result in 表示「導致、造成」；後接結果。注意 result from 表示「起因於」。",
+    "coll": "The storm resulted in serious damage.",
+    "answer": "resulted in",
+    "optionDetails": [
+      {
+        "id": "g09-answer",
+        "text": "resulted in",
+        "meaning": "導致",
+        "reason": "result in 表示「導致、造成」；後接結果。注意 result from 表示「起因於」。 本題搭配：The storm resulted in serious damage.",
+        "correct": true,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g09-d1",
+        "text": "prevented",
+        "meaning": "阻止了",
+        "reason": "prevented serious damage 是防止損害，與 caused 相反。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g09-d2",
+        "text": "reduced",
+        "meaning": "減少了",
+        "reason": "reduced serious damage 表減少，不保留造成損害。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g09-d3",
+        "text": "revealed",
+        "meaning": "揭露了",
+        "reason": "revealed serious damage 表使損害被看見，不表示風暴造成損害。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g09",
+    "contentRevision": "71f894f661216520"
+  },
+  {
+    "base": "change greatly",
+    "advanced": "transform",
+    "cn": "科技已大幅改變我們的生活。",
+    "basic": "Technology has greatly changed our lives.",
+    "up": "Technology has ____ our lives.",
+    "cn2": "這次經驗大幅改變了她對失敗的看法。",
+    "basic2": "The experience greatly changed her view of failure.",
+    "chunks": [
+      "The experience transformed her view of failure."
+    ],
+    "options": [
+      "transformed",
+      "preserved",
+      "documented",
+      "disrupted"
+    ],
+    "note": "transform 強調顯著改變；常見 transform lives / transform education。 transform 指顯著轉變，所以基本句加入 greatly；一般輕微 change 不宜替換。",
+    "coll": "Technology has transformed our lives.",
+    "answer": "transformed",
+    "optionDetails": [
+      {
+        "id": "g10-answer",
+        "text": "transformed",
+        "meaning": "轉變了",
+        "reason": "transform 強調顯著改變；常見 transform lives / transform education。 transform 指顯著轉變，所以基本句加入 greatly；一般輕微 change 不宜替換。 本題搭配：Technology has transformed our lives.",
+        "correct": true,
+        "form": "過去分詞"
+      },
+      {
+        "id": "g10-d1",
+        "text": "preserved",
+        "meaning": "保留了",
+        "reason": "has preserved our lives 表保存或保全，不保留大幅改變。",
+        "correct": false,
+        "form": "過去分詞"
+      },
+      {
+        "id": "g10-d2",
+        "text": "documented",
+        "meaning": "記錄了",
+        "reason": "has documented our lives 表記錄生活，不保留改變。",
+        "correct": false,
+        "form": "過去分詞"
+      },
+      {
+        "id": "g10-d3",
+        "text": "disrupted",
+        "meaning": "擾亂了",
+        "reason": "has disrupted our lives 表負面干擾，原句大幅改變沒有指定負面。",
+        "correct": false,
+        "form": "過去分詞"
+      }
+    ],
+    "questionId": "gsat-g10",
+    "contentRevision": "cf27383f5f343ef2"
+  },
+  {
+    "base": "grow",
+    "advanced": "increase",
+    "cn": "人口迅速增加。",
+    "basic": "The population has grown rapidly.",
+    "up": "The population has ____ rapidly.",
+    "cn2": "近年來線上購物需求已有所增加。",
+    "basic2": "Demand for online shopping has grown in recent years.",
+    "chunks": [
+      "Demand for online shopping has increased in recent years."
+    ],
+    "options": [
+      "increased",
+      "decreased",
+      "stabilized",
+      "fluctuated"
+    ],
+    "note": "increase 表示數量、程度增加；可作動詞或名詞。",
+    "coll": "The population has increased rapidly.",
+    "answer": "increased",
+    "optionDetails": [
+      {
+        "id": "g11-answer",
+        "text": "increased",
+        "meaning": "增加了",
+        "reason": "increase 表示數量、程度增加；可作動詞或名詞。 本題搭配：The population has increased rapidly.",
+        "correct": true,
+        "form": "過去分詞"
+      },
+      {
+        "id": "g11-d1",
+        "text": "decreased",
+        "meaning": "減少了",
+        "reason": "has decreased rapidly 表人口減少，與 grown 相反。",
+        "correct": false,
+        "form": "過去分詞"
+      },
+      {
+        "id": "g11-d2",
+        "text": "stabilized",
+        "meaning": "趨於穩定",
+        "reason": "has stabilized 表趨穩，不保留迅速增加。",
+        "correct": false,
+        "form": "過去分詞"
+      },
+      {
+        "id": "g11-d3",
+        "text": "fluctuated",
+        "meaning": "波動了",
+        "reason": "has fluctuated 表上下變動，不等於增加。",
+        "correct": false,
+        "form": "過去分詞"
+      }
+    ],
+    "questionId": "gsat-g11",
+    "contentRevision": "d772af3937c6a928"
+  },
+  {
+    "base": "try",
+    "advanced": "attempt",
+    "cn": "他嘗試獨自解決問題。",
+    "basic": "He tried to solve the problem alone.",
+    "up": "He ____ to solve the problem alone.",
+    "cn2": "她試著在比賽前控制緊張情緒。",
+    "basic2": "She tried to manage her nerves before the competition.",
+    "chunks": [
+      "She attempted to manage her nerves before the competition."
+    ],
+    "options": [
+      "attempted",
+      "refused",
+      "managed",
+      "pretended"
+    ],
+    "note": "attempt to do something 表示「嘗試做某事」，語氣比 try 稍正式。 attempt 與 try 都不保證成功；manage to 才表示成功做到。",
+    "coll": "He attempted to solve the problem alone.",
+    "answer": "attempted",
+    "optionDetails": [
+      {
+        "id": "g12-answer",
+        "text": "attempted",
+        "meaning": "嘗試了",
+        "reason": "attempt to do something 表示「嘗試做某事」，語氣比 try 稍正式。 attempt 與 try 都不保證成功；manage to 才表示成功做到。 本題搭配：He attempted to solve the problem alone.",
+        "correct": true,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g12-d1",
+        "text": "refused",
+        "meaning": "拒絕了",
+        "reason": "refused to solve 表不願做，不保留嘗試。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g12-d2",
+        "text": "managed",
+        "meaning": "設法做到了",
+        "reason": "managed to solve 表成功做到，tried 未保證成功。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g12-d3",
+        "text": "pretended",
+        "meaning": "假裝了",
+        "reason": "pretended to solve 表假裝解決，與認真嘗試不同。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g12",
+    "contentRevision": "5c1369205f1206d8"
+  },
+  {
+    "base": "choose",
+    "advanced": "select",
+    "cn": "學生可以根據自己的興趣選擇課程。",
+    "basic": "Students can choose courses based on their interests.",
+    "up": "Students can ____ courses based on their interests.",
+    "cn2": "請從清單中選出三項活動。",
+    "basic2": "Please choose three activities from the list.",
+    "chunks": [
+      "Please select three activities from the list."
+    ],
+    "options": [
+      "select",
+      "reject",
+      "design",
+      "advertise"
+    ],
+    "note": "select 表示選擇、挑選；常用 select courses / select an option。",
+    "coll": "Students can select courses based on their interests.",
+    "answer": "select",
+    "optionDetails": [
+      {
+        "id": "g13-answer",
+        "text": "select",
+        "meaning": "挑選",
+        "reason": "select 表示選擇、挑選；常用 select courses / select an option。 本題搭配：Students can select courses based on their interests.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g13-d1",
+        "text": "reject",
+        "meaning": "拒選",
+        "reason": "reject courses 表排除課程，不是選取課程。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g13-d2",
+        "text": "design",
+        "meaning": "設計",
+        "reason": "design courses 表設計內容，不是依興趣選課。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g13-d3",
+        "text": "advertise",
+        "meaning": "宣傳",
+        "reason": "advertise courses 表推廣課程，不保留選擇行為。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g13",
+    "contentRevision": "fdd14de2d7903525"
+  },
+  {
+    "base": "use",
+    "advanced": "utilize",
+    "cn": "我們應有效運用現有資源。",
+    "basic": "We should use available resources effectively.",
+    "up": "We should ____ available resources effectively.",
+    "cn2": "我們可以利用科技提高學習效率。",
+    "basic2": "We can use technology to improve learning efficiency.",
+    "chunks": [
+      "We can utilize technology to improve learning efficiency."
+    ],
+    "options": [
+      "utilize",
+      "ignore",
+      "distribute",
+      "evaluate"
+    ],
+    "note": "utilize 表示運用資源或方法；不必在所有情況下取代 use。 use 已自然簡潔；utilize 在運用資源時可用，較正式不代表更好。",
+    "coll": "We should utilize available resources effectively.",
+    "answer": "utilize",
+    "optionDetails": [
+      {
+        "id": "g14-answer",
+        "text": "utilize",
+        "meaning": "運用",
+        "reason": "utilize 表示運用資源或方法；不必在所有情況下取代 use。 use 已自然簡潔；utilize 在運用資源時可用，較正式不代表更好。 本題搭配：We should utilize available resources effectively.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g14-d1",
+        "text": "ignore",
+        "meaning": "忽略",
+        "reason": "ignore resources 表不理會資源，不保留有效使用。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g14-d2",
+        "text": "distribute",
+        "meaning": "分配",
+        "reason": "distribute resources 表分配資源，並未表示使用資源。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g14-d3",
+        "text": "evaluate",
+        "meaning": "評估",
+        "reason": "evaluate resources 表評估，不保留 use 的實際運用。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g14",
+    "contentRevision": "eb01ba6aeec453dc"
+  },
+  {
+    "base": "think",
+    "advanced": "believe",
+    "cn": "我認為努力能帶來成功。",
+    "basic": "I think effort leads to success.",
+    "up": "I ____ effort leads to success.",
+    "cn2": "我認為每個人都應該受到公平對待。",
+    "basic2": "I think everyone deserves fair treatment.",
+    "chunks": [
+      "I believe everyone deserves fair treatment."
+    ],
+    "options": [
+      "believe",
+      "doubt",
+      "deny",
+      "fear"
+    ],
+    "note": "believe that ... 可用於提出個人看法或信念。 believe 較突出信念，think 可較保留；本題保留認同立場但確信程度可能不同。",
+    "coll": "I believe effort leads to success.",
+    "answer": "believe",
+    "optionDetails": [
+      {
+        "id": "g15-answer",
+        "text": "believe",
+        "meaning": "相信",
+        "reason": "believe that ... 可用於提出個人看法或信念。 believe 較突出信念，think 可較保留；本題保留認同立場但確信程度可能不同。 本題搭配：I believe effort leads to success.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g15-d1",
+        "text": "doubt",
+        "meaning": "懷疑",
+        "reason": "doubt effort leads to success 表懷疑此命題，與 think 在此表認同不同。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g15-d2",
+        "text": "deny",
+        "meaning": "否認",
+        "reason": "deny effort leads to success 否定此命題，原句為正面看法。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g15-d3",
+        "text": "fear",
+        "meaning": "擔心",
+        "reason": "fear effort leads to success 加入對成功的擔憂，不保留原句立場。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g15",
+    "contentRevision": "f17d51ec786a26fc"
+  },
+  {
+    "base": "think",
+    "advanced": "argue",
+    "cn": "有些人認為校服是必要的。",
+    "basic": "Some people think school uniforms are necessary.",
+    "up": "Some people ____ that school uniforms are necessary.",
+    "cn2": "有些教育工作者認為學生需要更多休息時間。",
+    "basic2": "Some educators think students need more time to rest.",
+    "chunks": [
+      "Some educators argue that students need more time to rest."
+    ],
+    "options": [
+      "argue",
+      "deny",
+      "doubt",
+      "regret"
+    ],
+    "note": "argue that ... 用來提出論點或主張，不只是「想一想」。 think 只表看法；argue that 加入提出或支持論點的行為。本題練習表達主張，不宣稱完全等義。",
+    "coll": "Some people argue that school uniforms are necessary.",
+    "answer": "argue",
+    "optionDetails": [
+      {
+        "id": "g16-answer",
+        "text": "argue",
+        "meaning": "主張；爭論",
+        "reason": "argue that ... 用來提出論點或主張，不只是「想一想」。 think 只表看法；argue that 加入提出或支持論點的行為。本題練習表達主張，不宣稱完全等義。 本題搭配：Some people argue that school uniforms are necessary.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g16-d1",
+        "text": "deny",
+        "meaning": "否認",
+        "reason": "deny that 子句否定必要性，與認為必要的立場相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g16-d2",
+        "text": "doubt",
+        "meaning": "懷疑",
+        "reason": "doubt that 子句表不確定或不相信，不保留原句的認同立場。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g16-d3",
+        "text": "regret",
+        "meaning": "後悔；遺憾",
+        "reason": "regret that 子句可自然成立，但加入遺憾，不是提出校服必要的論點。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g16",
+    "contentRevision": "47079b080db32030"
+  },
+  {
+    "base": "think",
+    "advanced": "reflect on",
+    "cn": "我們應仔細反思自己的選擇。",
+    "basic": "We should think carefully about our choices.",
+    "up": "We should ____ our choices carefully.",
+    "cn2": "寫日記讓她能反思自己的進步。",
+    "basic2": "Keeping a journal helps her think about her progress.",
+    "chunks": [
+      "Keeping a journal helps her reflect on her progress."
+    ],
+    "options": [
+      "reflect on",
+      "complain about",
+      "boast about",
+      "forget about"
+    ],
+    "note": "reflect on 表示回顧、反思；常用 reflect on choices / mistakes。 reflect on 重回顧與反思，比一般 think about 更深入；注意 on 後接名詞或動名詞。",
+    "coll": "We should reflect on our choices carefully.",
+    "answer": "reflect on",
+    "optionDetails": [
+      {
+        "id": "g17-answer",
+        "text": "reflect on",
+        "meaning": "反思",
+        "reason": "reflect on 表示回顧、反思；常用 reflect on choices / mistakes。 reflect on 重回顧與反思，比一般 think about 更深入；注意 on 後接名詞或動名詞。 本題搭配：We should reflect on our choices carefully.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g17-d1",
+        "text": "complain about",
+        "meaning": "抱怨",
+        "reason": "complain about our choices 加入不滿，think carefully 不一定負面。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g17-d2",
+        "text": "boast about",
+        "meaning": "誇耀",
+        "reason": "boast about our choices 加入自誇，不是仔細思考。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g17-d3",
+        "text": "forget about",
+        "meaning": "忘記",
+        "reason": "forget about our choices 表忘記，不保留反思。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g17",
+    "contentRevision": "13addd45213a9b11"
+  },
+  {
+    "base": "know",
+    "advanced": "be aware of",
+    "cn": "我們應了解風險。",
+    "basic": "We should know about the risks.",
+    "up": "We should ____ the risks.",
+    "cn2": "離開前，我們必須了解天氣方面的風險。",
+    "basic2": "We must know about the weather risks before leaving.",
+    "chunks": [
+      "We must be aware of the weather risks before leaving."
+    ],
+    "options": [
+      "be aware of",
+      "be ignorant of",
+      "be indifferent to",
+      "be responsible for"
+    ],
+    "note": "be aware of 表示察覺或意識到；of 後接名詞或 V-ing。",
+    "coll": "We should be aware of the risks.",
+    "answer": "be aware of",
+    "optionDetails": [
+      {
+        "id": "g18-answer",
+        "text": "be aware of",
+        "meaning": "意識到",
+        "reason": "be aware of 表示察覺或意識到；of 後接名詞或 V-ing。 本題搭配：We should be aware of the risks.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g18-d1",
+        "text": "be ignorant of",
+        "meaning": "不知道",
+        "reason": "be ignorant of the risks 表不了解，與 know about 相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g18-d2",
+        "text": "be indifferent to",
+        "meaning": "漠不關心",
+        "reason": "be indifferent to the risks 表態度冷漠，不保留知悉風險。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g18-d3",
+        "text": "be responsible for",
+        "meaning": "對……負責",
+        "reason": "be responsible for the risks 表責任歸屬，不等於知道風險。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g18",
+    "contentRevision": "d1bb6561a6853b75"
+  },
+  {
+    "base": "show",
+    "advanced": "demonstrate",
+    "cn": "他的行動展現了強烈的責任感。",
+    "basic": "His actions showed a strong sense of responsibility.",
+    "up": "His actions ____ a strong sense of responsibility.",
+    "cn2": "研究結果顯示睡眠與記憶力之間的關聯。",
+    "basic2": "The findings showed a link between sleep and memory.",
+    "chunks": [
+      "The findings demonstrated a link between sleep and memory."
+    ],
+    "options": [
+      "demonstrated",
+      "concealed",
+      "contradicted",
+      "undermined"
+    ],
+    "note": "demonstrate 表示清楚展現或證明；常見 demonstrate responsibility。 此處 demonstrated 是「展現了」責任感；研究句的 demonstrated a link 表顯示關聯，不等於證明因果。",
+    "coll": "His actions demonstrated a strong sense of responsibility.",
+    "answer": "demonstrated",
+    "optionDetails": [
+      {
+        "id": "g19-answer",
+        "text": "demonstrated",
+        "meaning": "展現了",
+        "reason": "demonstrate 表示清楚展現或證明；常見 demonstrate responsibility。 此處 demonstrated 是「展現了」責任感；研究句的 demonstrated a link 表顯示關聯，不等於證明因果。 本題搭配：His actions demonstrated a strong sense of responsibility.",
+        "correct": true,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g19-d1",
+        "text": "concealed",
+        "meaning": "掩藏了",
+        "reason": "concealed a strong sense of responsibility 表掩藏，與 showed 相反。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g19-d2",
+        "text": "contradicted",
+        "meaning": "與……矛盾",
+        "reason": "contradicted a strong sense of responsibility 表行動與責任感相矛盾，不是展現。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g19-d3",
+        "text": "undermined",
+        "meaning": "削弱了",
+        "reason": "undermined a strong sense of responsibility 表削弱，不保留展現。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g19",
+    "contentRevision": "2663e9aca97c6ac7"
+  },
+  {
+    "base": "chance",
+    "advanced": "opportunity",
+    "cn": "她獲得了出國留學的機會。",
+    "basic": "She got the chance to study abroad.",
+    "up": "She got the ____ to study abroad.",
+    "cn2": "這份實習讓她有機會學習新技能。",
+    "basic2": "The internship gave her a chance to learn new skills.",
+    "chunks": [
+      "The internship gave her an opportunity to learn new skills."
+    ],
+    "options": [
+      "opportunity",
+      "obligation",
+      "permission",
+      "motivation"
+    ],
+    "note": "opportunity 表示機會；常用 an opportunity to do something。",
+    "coll": "She got the opportunity to study abroad.",
+    "answer": "opportunity",
+    "optionDetails": [
+      {
+        "id": "g20-answer",
+        "text": "opportunity",
+        "meaning": "機會",
+        "reason": "opportunity 表示機會；常用 an opportunity to do something。 本題搭配：She got the opportunity to study abroad.",
+        "correct": true,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g20-d1",
+        "text": "obligation",
+        "meaning": "義務",
+        "reason": "obligation to study abroad 語法自然，但把機會改成必須做的義務。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g20-d2",
+        "text": "permission",
+        "meaning": "許可",
+        "reason": "permission to study abroad 指獲准，不等於獲得實際機會。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g20-d3",
+        "text": "motivation",
+        "meaning": "動機",
+        "reason": "motivation to study abroad 指想做的動力，不保留獲得機會。",
+        "correct": false,
+        "form": "單數名詞"
+      }
+    ],
+    "questionId": "gsat-g20",
+    "contentRevision": "b062cb4d24266bc7"
+  },
+  {
+    "base": "problem",
+    "advanced": "issue",
+    "cn": "環境問題正變得嚴重。",
+    "basic": "Environmental problems are becoming serious.",
+    "up": "Environmental ____ are becoming serious.",
+    "cn2": "心理健康不佳是學校應關注的問題。",
+    "basic2": "Poor mental health is a problem that schools should pay attention to.",
+    "chunks": [
+      "Poor mental health is an issue that schools should pay attention to."
+    ],
+    "options": [
+      "issues",
+      "benefits",
+      "opportunities",
+      "policies"
+    ],
+    "note": "issue 可表示值得討論或處理的問題；常見 environmental issues。",
+    "coll": "Environmental issues are becoming serious.",
+    "answer": "issues",
+    "optionDetails": [
+      {
+        "id": "g21-answer",
+        "text": "issues",
+        "meaning": "議題；問題",
+        "reason": "issue 可表示值得討論或處理的問題；常見 environmental issues。 本題搭配：Environmental issues are becoming serious.",
+        "correct": true,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g21-d1",
+        "text": "benefits",
+        "meaning": "益處",
+        "reason": "environmental benefits 指環境益處，與 problems 的負面問題不同。",
+        "correct": false,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g21-d2",
+        "text": "opportunities",
+        "meaning": "機會",
+        "reason": "environmental opportunities 指環境相關機會，不保留問題。",
+        "correct": false,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g21-d3",
+        "text": "policies",
+        "meaning": "政策",
+        "reason": "environmental policies 是政策，與待處理的問題不是同一概念。",
+        "correct": false,
+        "form": "複數名詞"
+      }
+    ],
+    "questionId": "gsat-g21",
+    "contentRevision": "ba7a459a33ec3e6a"
+  },
+  {
+    "base": "start",
+    "advanced": "initiate",
+    "cn": "學校啟動回收計畫。",
+    "basic": "The school started a recycling program.",
+    "up": "The school ____ a recycling program.",
+    "cn2": "社區發起了一項節能活動。",
+    "basic2": "The community started an energy-saving campaign.",
+    "chunks": [
+      "The community initiated an energy-saving campaign."
+    ],
+    "options": [
+      "initiated",
+      "terminated",
+      "evaluated",
+      "financed"
+    ],
+    "note": "initiate 表示發起、啟動；常見 initiate a program / campaign。",
+    "coll": "The school initiated a recycling program.",
+    "answer": "initiated",
+    "optionDetails": [
+      {
+        "id": "g22-answer",
+        "text": "initiated",
+        "meaning": "發起了",
+        "reason": "initiate 表示發起、啟動；常見 initiate a program / campaign。 本題搭配：The school initiated a recycling program.",
+        "correct": true,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g22-d1",
+        "text": "terminated",
+        "meaning": "終止了",
+        "reason": "terminated a recycling program 是結束，不是開始。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g22-d2",
+        "text": "evaluated",
+        "meaning": "評估了",
+        "reason": "evaluated a recycling program 是評估，未表示發起。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g22-d3",
+        "text": "financed",
+        "meaning": "資助了",
+        "reason": "financed a recycling program 是出錢支持，不必然是啟動者。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g22",
+    "contentRevision": "5a7964f030e30eab"
+  },
+  {
+    "base": "do",
+    "advanced": "perform",
+    "cn": "學生每天執行各種任務。",
+    "basic": "Students do various tasks every day.",
+    "up": "Students ____ various tasks every day.",
+    "cn2": "醫護人員在緊急情況下履行重要職責。",
+    "basic2": "Medical workers carry out important duties during emergencies.",
+    "chunks": [
+      "Medical workers perform important duties during emergencies."
+    ],
+    "options": [
+      "perform",
+      "postpone",
+      "assign",
+      "avoid"
+    ],
+    "note": "perform 表示執行任務、履行職責；常見 perform tasks / duties。",
+    "coll": "Students perform various tasks every day.",
+    "answer": "perform",
+    "optionDetails": [
+      {
+        "id": "g23-answer",
+        "text": "perform",
+        "meaning": "執行；表演",
+        "reason": "perform 表示執行任務、履行職責；常見 perform tasks / duties。 本題搭配：Students perform various tasks every day.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g23-d1",
+        "text": "postpone",
+        "meaning": "延後",
+        "reason": "postpone tasks 是延後任務，並非執行。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g23-d2",
+        "text": "assign",
+        "meaning": "指派",
+        "reason": "assign tasks 是分派任務，未表示學生自己執行。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g23-d3",
+        "text": "avoid",
+        "meaning": "避開",
+        "reason": "avoid tasks 是迴避任務，與 do 相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g23",
+    "contentRevision": "3db1d9ef8fec5dfa"
+  },
+  {
+    "base": "say",
+    "advanced": "remark",
+    "cn": "他說這項計畫很棒。",
+    "basic": "He said that the plan was excellent.",
+    "up": "He ____ that the plan was excellent.",
+    "cn2": "參觀結束後，這位遊客說博物館的安排很完善。",
+    "basic2": "After the tour, the visitor said that the museum was well organized.",
+    "chunks": [
+      "After the tour, the visitor remarked that the museum was well organized."
+    ],
+    "options": [
+      "remarked",
+      "noticed",
+      "considered",
+      "discovered"
+    ],
+    "note": "remark that ... 表示評論、提及；比 say 更強調發表意見。 said 只表說出；remarked 加入評論或提及的語氣。noticed / considered / discovered 接 that 子句可自然，但不保留發言。",
+    "coll": "He remarked that the plan was excellent.",
+    "answer": "remarked",
+    "optionDetails": [
+      {
+        "id": "g24-answer",
+        "text": "remarked",
+        "meaning": "評論了",
+        "reason": "remark that ... 表示評論、提及；比 say 更強調發表意見。 said 只表說出；remarked 加入評論或提及的語氣。noticed / considered / discovered 接 that 子句可自然，但不保留發言。 本題搭配：He remarked that the plan was excellent.",
+        "correct": true,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g24-d1",
+        "text": "noticed",
+        "meaning": "注意到了",
+        "reason": "noticed that 可自然接子句，但只表注意到，不保留 said 的發言行為。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g24-d2",
+        "text": "considered",
+        "meaning": "認為了",
+        "reason": "considered that 可表認為，但沒有保留說出口這件事。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g24-d3",
+        "text": "discovered",
+        "meaning": "發現了",
+        "reason": "discovered that 表發現事實，不表示發言，且加入獲知資訊。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g24",
+    "contentRevision": "8fd5e15aec440dac"
+  },
+  {
+    "base": "tell",
+    "advanced": "inform",
+    "cn": "老師告知學生這些變動。",
+    "basic": "Teachers tell students about the changes.",
+    "up": "Teachers ____ students of the changes.",
+    "cn2": "學校將告知家長新的活動時程。",
+    "basic2": "The school will tell parents about the new event schedule.",
+    "chunks": [
+      "The school will inform parents of the new event schedule."
+    ],
+    "options": [
+      "inform",
+      "remind",
+      "convince",
+      "warn"
+    ],
+    "note": "inform someone of/about something 表示通知某人某事。 inform 是告知；remind 預設對方先前知道，warn 帶有警告性，不能任意互換。",
+    "coll": "Teachers inform students of the changes.",
+    "answer": "inform",
+    "optionDetails": [
+      {
+        "id": "g25-answer",
+        "text": "inform",
+        "meaning": "告知",
+        "reason": "inform someone of/about something 表示通知某人某事。 inform 是告知；remind 預設對方先前知道，warn 帶有警告性，不能任意互換。 本題搭配：Teachers inform students of the changes.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g25-d1",
+        "text": "remind",
+        "meaning": "提醒",
+        "reason": "remind students of changes 表喚回已知資訊；tell about 未預設學生先前知道。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g25-d2",
+        "text": "convince",
+        "meaning": "使信服",
+        "reason": "convince students of changes 表使人相信，不是單純告知變動。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g25-d3",
+        "text": "warn",
+        "meaning": "警告",
+        "reason": "warn students of changes 加入危險或不良後果的警告語氣，原句未交代。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g25",
+    "contentRevision": "b924267317835ac9"
+  },
+  {
+    "base": "very important",
+    "advanced": "crucial",
+    "cn": "教育在我們的生活中扮演非常重要的角色。",
+    "basic": "Education plays a very important role in our lives.",
+    "up": "Education plays a ____ role in our lives.",
+    "cn2": "家長的支持在孩子的成長中扮演非常重要的角色。",
+    "basic2": "Parental support plays a very important role in children's development.",
+    "chunks": [
+      "Parental support plays a crucial role in children's development."
+    ],
+    "options": [
+      "crucial",
+      "minor",
+      "decorative",
+      "temporary"
+    ],
+    "note": "crucial 表示關鍵、極重要；常見 play a crucial role in。 crucial 帶關鍵性，比一般 important 強；此處 very important 提供高度重要語境。",
+    "coll": "Education plays a crucial role in our lives.",
+    "answer": "crucial",
+    "optionDetails": [
+      {
+        "id": "g26-answer",
+        "text": "crucial",
+        "meaning": "關鍵的",
+        "reason": "crucial 表示關鍵、極重要；常見 play a crucial role in。 crucial 帶關鍵性，比一般 important 強；此處 very important 提供高度重要語境。 本題搭配：Education plays a crucial role in our lives.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g26-d1",
+        "text": "minor",
+        "meaning": "次要的",
+        "reason": "minor role 與 very important 的重要程度相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g26-d2",
+        "text": "decorative",
+        "meaning": "裝飾性的",
+        "reason": "decorative role 表裝飾作用，不保留生活中的重要角色。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g26-d3",
+        "text": "temporary",
+        "meaning": "暫時的",
+        "reason": "temporary role 說明時間長短，不表示重要程度。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g26",
+    "contentRevision": "e62cc7130993e5ed"
+  },
+  {
+    "base": "serious",
+    "advanced": "severe",
+    "cn": "空氣污染已成為嚴重的問題。",
+    "basic": "Air pollution has become a serious problem.",
+    "up": "Air pollution has become a ____ problem.",
+    "cn2": "颱風對沿海地區造成嚴重損害。",
+    "basic2": "The typhoon caused serious damage to coastal areas.",
+    "chunks": [
+      "The typhoon caused severe damage to coastal areas."
+    ],
+    "options": [
+      "severe",
+      "minor",
+      "imaginary",
+      "temporary"
+    ],
+    "note": "severe 表示嚴重的；常搭配 pollution、damage、shortages。",
+    "coll": "Air pollution has become a severe problem.",
+    "answer": "severe",
+    "optionDetails": [
+      {
+        "id": "g27-answer",
+        "text": "severe",
+        "meaning": "嚴重的",
+        "reason": "severe 表示嚴重的；常搭配 pollution、damage、shortages。 本題搭配：Air pollution has become a severe problem.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g27-d1",
+        "text": "minor",
+        "meaning": "輕微的",
+        "reason": "minor problem 表問題不大，與 serious 相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g27-d2",
+        "text": "imaginary",
+        "meaning": "想像的",
+        "reason": "imaginary problem 表並非真實問題，不保留嚴重程度。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g27-d3",
+        "text": "temporary",
+        "meaning": "暫時的",
+        "reason": "temporary problem 表時間短暫，未保留嚴重性。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g27",
+    "contentRevision": "c7769ee334104e17"
+  },
+  {
+    "base": "difficult",
+    "advanced": "challenging",
+    "cn": "學習一門新語言可能很困難。",
+    "basic": "Learning a new language can be difficult.",
+    "up": "Learning a new language can be ____.",
+    "cn2": "快速適應新環境可能很困難。",
+    "basic2": "Adjusting to a new environment quickly can be difficult.",
+    "chunks": [
+      "Adjusting to a new environment quickly can be challenging."
+    ],
+    "options": [
+      "challenging",
+      "effortless",
+      "pointless",
+      "routine"
+    ],
+    "note": "challenging 表示有挑戰性的；可形容任務或學習經驗。 challenging 帶需要努力、可接受挑戰的視角；difficult 只指困難，兩者評價色彩不完全相同。",
+    "coll": "Learning a new language can be challenging.",
+    "answer": "challenging",
+    "optionDetails": [
+      {
+        "id": "g28-answer",
+        "text": "challenging",
+        "meaning": "具挑戰性的",
+        "reason": "challenging 表示有挑戰性的；可形容任務或學習經驗。 challenging 帶需要努力、可接受挑戰的視角；difficult 只指困難，兩者評價色彩不完全相同。 本題搭配：Learning a new language can be challenging.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g28-d1",
+        "text": "effortless",
+        "meaning": "不費力的",
+        "reason": "effortless 表毫不費力，與 difficult 相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g28-d2",
+        "text": "pointless",
+        "meaning": "無意義的",
+        "reason": "pointless 評價是否有意義，不等於困難。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g28-d3",
+        "text": "routine",
+        "meaning": "例行的",
+        "reason": "routine 指常規，未保留學習難度。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g28",
+    "contentRevision": "dacf34b422866934"
+  },
+  {
+    "base": "useful",
+    "advanced": "valuable",
+    "cn": "志工服務提供有用的經驗。",
+    "basic": "Volunteering provides useful experience.",
+    "up": "Volunteering provides ____ experience.",
+    "cn2": "老師的回饋提供了有用的指引。",
+    "basic2": "The teacher's feedback offered useful guidance.",
+    "chunks": [
+      "The teacher's feedback offered valuable guidance."
+    ],
+    "options": [
+      "valuable",
+      "useless",
+      "unpleasant",
+      "irrelevant"
+    ],
+    "note": "valuable 表示有價值的；常搭配 experience / advice。 useful 強調實際用途；valuable 強調價值。此處同指有幫助的經驗，但焦點不同。",
+    "coll": "Volunteering provides valuable experience.",
+    "answer": "valuable",
+    "optionDetails": [
+      {
+        "id": "g29-answer",
+        "text": "valuable",
+        "meaning": "有價值的",
+        "reason": "valuable 表示有價值的；常搭配 experience / advice。 useful 強調實際用途；valuable 強調價值。此處同指有幫助的經驗，但焦點不同。 本題搭配：Volunteering provides valuable experience.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g29-d1",
+        "text": "useless",
+        "meaning": "無用的",
+        "reason": "useless experience 與 useful 相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g29-d2",
+        "text": "unpleasant",
+        "meaning": "不愉快的",
+        "reason": "unpleasant experience 談感受，不保留實用價值。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g29-d3",
+        "text": "irrelevant",
+        "meaning": "不相關的",
+        "reason": "irrelevant experience 指不相關，不保留對人有用。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g29",
+    "contentRevision": "37ec2976e7e5527c"
+  },
+  {
+    "base": "enough",
+    "advanced": "sufficient",
+    "cn": "學生需要充足睡眠。",
+    "basic": "Students need enough sleep.",
+    "up": "Students need ____ sleep.",
+    "cn2": "社區沒有足夠的乾淨飲用水。",
+    "basic2": "The community does not have enough clean drinking water.",
+    "chunks": [
+      "The community does not have sufficient clean drinking water."
+    ],
+    "options": [
+      "sufficient",
+      "insufficient",
+      "interrupted",
+      "restless"
+    ],
+    "note": "sufficient 表示足夠的；常搭配 sleep、time、resources。",
+    "coll": "Students need sufficient sleep.",
+    "answer": "sufficient",
+    "optionDetails": [
+      {
+        "id": "g30-answer",
+        "text": "sufficient",
+        "meaning": "足夠的",
+        "reason": "sufficient 表示足夠的；常搭配 sleep、time、resources。 本題搭配：Students need sufficient sleep.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g30-d1",
+        "text": "insufficient",
+        "meaning": "不足的",
+        "reason": "insufficient sleep 表睡眠不足，與 enough 相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g30-d2",
+        "text": "interrupted",
+        "meaning": "中斷的",
+        "reason": "interrupted sleep 談連續性，不是睡眠量足夠。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g30-d3",
+        "text": "restless",
+        "meaning": "不安穩的",
+        "reason": "restless sleep 談睡眠品質，不保留足量。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g30",
+    "contentRevision": "ca2e396a6db889bf"
+  },
+  {
+    "base": "clear",
+    "advanced": "evident",
+    "cn": "運動的益處很明顯。",
+    "basic": "The benefits of exercise are clear.",
+    "up": "The benefits of exercise are ____.",
+    "cn2": "結果明顯顯示這項方法有效。",
+    "basic2": "It is clear from the results that the method works.",
+    "chunks": [
+      "It is evident from the results that the method works."
+    ],
+    "options": [
+      "evident",
+      "hidden",
+      "uncertain",
+      "temporary"
+    ],
+    "note": "evident 表示明顯的；常見 be evident / become evident。",
+    "coll": "The benefits of exercise are evident.",
+    "answer": "evident",
+    "optionDetails": [
+      {
+        "id": "g31-answer",
+        "text": "evident",
+        "meaning": "明顯的",
+        "reason": "evident 表示明顯的；常見 be evident / become evident。 本題搭配：The benefits of exercise are evident.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g31-d1",
+        "text": "hidden",
+        "meaning": "隱藏的",
+        "reason": "hidden benefits 指不易看見，與 clear 相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g31-d2",
+        "text": "uncertain",
+        "meaning": "不確定的",
+        "reason": "uncertain benefits 表益處不確定，與明確不同。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g31-d3",
+        "text": "temporary",
+        "meaning": "暫時的",
+        "reason": "temporary benefits 表持續時間短，未保留可清楚辨識。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g31",
+    "contentRevision": "06074737dee71894"
+  },
+  {
+    "base": "possible",
+    "advanced": "feasible",
+    "cn": "這項計畫可以實行。",
+    "basic": "It is possible to carry out this plan.",
+    "up": "This plan is ____.",
+    "cn2": "即使預算有限，這項提案仍可以實行。",
+    "basic2": "It is still possible to carry out the proposal with a limited budget.",
+    "chunks": [
+      "The proposal is still feasible with a limited budget."
+    ],
+    "options": [
+      "feasible",
+      "impractical",
+      "compulsory",
+      "controversial"
+    ],
+    "note": "feasible 表示實際可行；常用於計畫、方案。 feasible 指現實條件下可實行，不等於任何抽象的 possible。",
+    "coll": "This plan is feasible.",
+    "answer": "feasible",
+    "optionDetails": [
+      {
+        "id": "g32-answer",
+        "text": "feasible",
+        "meaning": "可行的",
+        "reason": "feasible 表示實際可行；常用於計畫、方案。 feasible 指現實條件下可實行，不等於任何抽象的 possible。 本題搭配：This plan is feasible.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g32-d1",
+        "text": "impractical",
+        "meaning": "不切實際的",
+        "reason": "impractical plan 表難以實行，與可執行相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g32-d2",
+        "text": "compulsory",
+        "meaning": "強制的",
+        "reason": "compulsory plan 談是否強制，不表示可行。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g32-d3",
+        "text": "controversial",
+        "meaning": "有爭議的",
+        "reason": "controversial plan 談爭議，不保留能否實施。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g32",
+    "contentRevision": "1183e1b661dd9e86"
+  },
+  {
+    "base": "common",
+    "advanced": "widespread",
+    "cn": "青少年使用智慧型手機很普遍。",
+    "basic": "Smartphone use is common among teenagers.",
+    "up": "Smartphone use is ____ among teenagers.",
+    "cn2": "網路霸凌在許多社群平台上相當普遍。",
+    "basic2": "Cyberbullying is common on many social media platforms.",
+    "chunks": [
+      "Cyberbullying is widespread on many social media platforms."
+    ],
+    "options": [
+      "widespread",
+      "rare",
+      "restricted",
+      "unpopular"
+    ],
+    "note": "widespread 表示廣泛存在、普遍的；常搭配 use / concern。",
+    "coll": "Smartphone use is widespread among teenagers.",
+    "answer": "widespread",
+    "optionDetails": [
+      {
+        "id": "g33-answer",
+        "text": "widespread",
+        "meaning": "廣泛的",
+        "reason": "widespread 表示廣泛存在、普遍的；常搭配 use / concern。 本題搭配：Smartphone use is widespread among teenagers.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g33-d1",
+        "text": "rare",
+        "meaning": "罕見的",
+        "reason": "rare among teenagers 表少見，與 common 相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g33-d2",
+        "text": "restricted",
+        "meaning": "受限制的",
+        "reason": "restricted among teenagers 表使用受限，不是普遍。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g33-d3",
+        "text": "unpopular",
+        "meaning": "不受歡迎的",
+        "reason": "unpopular among teenagers 談喜好，不等同普及程度。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g33",
+    "contentRevision": "c4479ceb2e773f7a"
+  },
+  {
+    "base": "different",
+    "advanced": "diverse",
+    "cn": "學生來自不同背景。",
+    "basic": "Students come from different backgrounds.",
+    "up": "Students come from ____ backgrounds.",
+    "cn2": "團隊成員有不同觀點。",
+    "basic2": "Team members have different perspectives.",
+    "chunks": [
+      "Team members have diverse perspectives."
+    ],
+    "options": [
+      "diverse",
+      "identical",
+      "privileged",
+      "academic"
+    ],
+    "note": "diverse 表示多元、多樣；常見 diverse backgrounds。 different 只說彼此不同；diverse 強調種類多樣，屬焦點加強，不是所有不同都多元。",
+    "coll": "Students come from diverse backgrounds.",
+    "answer": "diverse",
+    "optionDetails": [
+      {
+        "id": "g34-answer",
+        "text": "diverse",
+        "meaning": "多樣的",
+        "reason": "diverse 表示多元、多樣；常見 diverse backgrounds。 different 只說彼此不同；diverse 強調種類多樣，屬焦點加強，不是所有不同都多元。 本題搭配：Students come from diverse backgrounds.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g34-d1",
+        "text": "identical",
+        "meaning": "相同的",
+        "reason": "identical backgrounds 與 different 相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g34-d2",
+        "text": "privileged",
+        "meaning": "優渥的",
+        "reason": "privileged backgrounds 談社經條件，不保留背景差異。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g34-d3",
+        "text": "academic",
+        "meaning": "學術的",
+        "reason": "academic backgrounds 談背景類型，未保留多樣程度。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g34",
+    "contentRevision": "bcda542ad8af6189"
+  },
+  {
+    "base": "lasting",
+    "advanced": "long-lasting",
+    "cn": "閱讀可以帶來持久的益處。",
+    "basic": "Reading can have lasting benefits.",
+    "up": "Reading can have ____ benefits.",
+    "cn2": "這項計畫對社區帶來了持久的正面影響。",
+    "basic2": "The project had a lasting positive effect on the community.",
+    "chunks": [
+      "The project had a long-lasting positive effect on the community."
+    ],
+    "options": [
+      "long-lasting",
+      "short-lived",
+      "immediate",
+      "financial"
+    ],
+    "note": "lasting 和 long-lasting 都是自然表達；long-lasting 強調持續很久，並非一定比 lasting 高級。 lasting 本身自然；long-lasting 同樣表持久，並非一定更高級。",
+    "coll": "Reading can have long-lasting benefits.",
+    "answer": "long-lasting",
+    "optionDetails": [
+      {
+        "id": "g35-answer",
+        "text": "long-lasting",
+        "meaning": "持久的",
+        "reason": "lasting 和 long-lasting 都是自然表達；long-lasting 強調持續很久，並非一定比 lasting 高級。 lasting 本身自然；long-lasting 同樣表持久，並非一定更高級。 本題搭配：Reading can have long-lasting benefits.",
+        "correct": true,
+        "form": "形容詞"
+      },
+      {
+        "id": "g35-d1",
+        "text": "short-lived",
+        "meaning": "短暫的",
+        "reason": "short-lived benefits 與 lasting 的持續性相反。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g35-d2",
+        "text": "immediate",
+        "meaning": "立即的",
+        "reason": "immediate benefits 說明何時開始，不保留持續很久。",
+        "correct": false,
+        "form": "形容詞"
+      },
+      {
+        "id": "g35-d3",
+        "text": "financial",
+        "meaning": "財務上的",
+        "reason": "financial benefits 限定金錢領域，原句未限定。",
+        "correct": false,
+        "form": "形容詞"
+      }
+    ],
+    "questionId": "gsat-g35",
+    "contentRevision": "8200bb611a309112"
+  },
+  {
+    "base": "gain",
+    "advanced": "acquire",
+    "cn": "學生可以透過閱讀獲取知識。",
+    "basic": "Students can gain knowledge through reading.",
+    "up": "Students can ____ knowledge through reading.",
+    "cn2": "孩子能透過遊戲獲得新的社交技能。",
+    "basic2": "Children can get new social skills through play.",
+    "chunks": [
+      "Children can acquire new social skills through play."
+    ],
+    "options": [
+      "acquire",
+      "forget",
+      "test",
+      "display"
+    ],
+    "note": "acquire 表示獲得知識或技能；常見 acquire knowledge / skills。 acquire knowledge / skills 常指逐步習得；不宜把每個 get 都換 acquire。",
+    "coll": "Students can acquire knowledge through reading.",
+    "answer": "acquire",
+    "optionDetails": [
+      {
+        "id": "g36-answer",
+        "text": "acquire",
+        "meaning": "取得；習得",
+        "reason": "acquire 表示獲得知識或技能；常見 acquire knowledge / skills。 acquire knowledge / skills 常指逐步習得；不宜把每個 get 都換 acquire。 本題搭配：Students can acquire knowledge through reading.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g36-d1",
+        "text": "forget",
+        "meaning": "忘記",
+        "reason": "forget knowledge 表遺忘，不保留獲取。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g36-d2",
+        "text": "test",
+        "meaning": "測試",
+        "reason": "test knowledge 表檢驗已知內容，不是習得。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g36-d3",
+        "text": "display",
+        "meaning": "展現",
+        "reason": "display knowledge 表展現所知，未表示增加知識。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g36",
+    "contentRevision": "a5f3028c8275ce56"
+  },
+  {
+    "base": "get",
+    "advanced": "obtain",
+    "cn": "我們可以在線上取得資訊。",
+    "basic": "We can get information online.",
+    "up": "We can ____ information online.",
+    "cn2": "申請人必須先取得家長同意。",
+    "basic2": "Applicants must get parental permission first.",
+    "chunks": [
+      "Applicants must obtain parental permission first."
+    ],
+    "options": [
+      "obtain",
+      "conceal",
+      "distort",
+      "verify"
+    ],
+    "note": "obtain 表示取得；常見 obtain information / permission。 obtain information / permission 是取得；observe 是觀察或遵守，並非 obtain 的同義詞。",
+    "coll": "We can obtain information online.",
+    "answer": "obtain",
+    "optionDetails": [
+      {
+        "id": "g37-answer",
+        "text": "obtain",
+        "meaning": "取得",
+        "reason": "obtain 表示取得；常見 obtain information / permission。 obtain information / permission 是取得；observe 是觀察或遵守，並非 obtain 的同義詞。 本題搭配：We can obtain information online.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g37-d1",
+        "text": "conceal",
+        "meaning": "隱藏",
+        "reason": "conceal information 表隱藏，不是取得。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g37-d2",
+        "text": "distort",
+        "meaning": "扭曲",
+        "reason": "distort information 表改變真實性，不保留 get。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g37-d3",
+        "text": "verify",
+        "meaning": "查證",
+        "reason": "verify information 表查核資訊，未保留取得資訊的行為。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g37",
+    "contentRevision": "ebc9616b213c2e91"
+  },
+  {
+    "base": "make better",
+    "advanced": "enhance",
+    "cn": "運動能提升我們的生活品質。",
+    "basic": "Exercise can make our quality of life better.",
+    "up": "Exercise can ____ our quality of life.",
+    "cn2": "閱讀不同觀點可以提升我們的理解。",
+    "basic2": "Reading different viewpoints can improve our understanding.",
+    "chunks": [
+      "Reading different viewpoints can enhance our understanding."
+    ],
+    "options": [
+      "enhance",
+      "diminish",
+      "measure",
+      "predict"
+    ],
+    "note": "enhance 表示提升品質或能力；常見 enhance quality of life。",
+    "coll": "Exercise can enhance our quality of life.",
+    "answer": "enhance",
+    "optionDetails": [
+      {
+        "id": "g38-answer",
+        "text": "enhance",
+        "meaning": "提升",
+        "reason": "enhance 表示提升品質或能力；常見 enhance quality of life。 本題搭配：Exercise can enhance our quality of life.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g38-d1",
+        "text": "diminish",
+        "meaning": "降低",
+        "reason": "diminish quality of life 表降低，與 make better 相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g38-d2",
+        "text": "measure",
+        "meaning": "測量",
+        "reason": "measure quality of life 表測量，未保留改善。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g38-d3",
+        "text": "predict",
+        "meaning": "預測",
+        "reason": "predict quality of life 表預測，未保留提升。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g38",
+    "contentRevision": "04b14229d53356c4"
+  },
+  {
+    "base": "make worse",
+    "advanced": "worsen",
+    "cn": "壓力可能使健康問題惡化。",
+    "basic": "Stress may make existing health problems worse.",
+    "up": "Stress may ____ existing health problems.",
+    "cn2": "不實資訊可能使社會分歧惡化。",
+    "basic2": "False information may make social divisions worse.",
+    "chunks": [
+      "False information may worsen social divisions."
+    ],
+    "options": [
+      "worsen",
+      "alleviate",
+      "conceal",
+      "detect"
+    ],
+    "note": "worsen 表示使情況惡化；常見 worsen a problem。",
+    "coll": "Stress may worsen existing health problems.",
+    "answer": "worsen",
+    "optionDetails": [
+      {
+        "id": "g39-answer",
+        "text": "worsen",
+        "meaning": "惡化",
+        "reason": "worsen 表示使情況惡化；常見 worsen a problem。 本題搭配：Stress may worsen existing health problems.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g39-d1",
+        "text": "alleviate",
+        "meaning": "減輕",
+        "reason": "alleviate health problems 表減輕，與 make worse 相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g39-d2",
+        "text": "conceal",
+        "meaning": "掩蓋",
+        "reason": "conceal health problems 表隱藏，不表示更嚴重。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g39-d3",
+        "text": "detect",
+        "meaning": "偵測",
+        "reason": "detect health problems 表發現問題，未表示惡化。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g39",
+    "contentRevision": "f601d530758f0bfe"
+  },
+  {
+    "base": "cause",
+    "advanced": "trigger",
+    "cn": "這則新聞引發了激烈的討論。",
+    "basic": "The news caused a heated discussion.",
+    "up": "The news ____ a heated discussion.",
+    "cn2": "突如其來的聲響在人群中造成恐慌。",
+    "basic2": "The sudden noise caused panic among the crowd.",
+    "chunks": [
+      "The sudden noise triggered panic among the crowd."
+    ],
+    "options": [
+      "triggered",
+      "prevented",
+      "summarized",
+      "interrupted"
+    ],
+    "note": "trigger 表示引發事件或反應；常見 trigger a discussion。",
+    "coll": "The news triggered a heated discussion.",
+    "answer": "triggered",
+    "optionDetails": [
+      {
+        "id": "g40-answer",
+        "text": "triggered",
+        "meaning": "引發了",
+        "reason": "trigger 表示引發事件或反應；常見 trigger a discussion。 本題搭配：The news triggered a heated discussion.",
+        "correct": true,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g40-d1",
+        "text": "prevented",
+        "meaning": "阻止了",
+        "reason": "prevented a discussion 表阻止，不是引起。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g40-d2",
+        "text": "summarized",
+        "meaning": "摘要了",
+        "reason": "summarized a discussion 表摘要既有討論，不表示造成討論。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      },
+      {
+        "id": "g40-d3",
+        "text": "interrupted",
+        "meaning": "打斷了",
+        "reason": "interrupted a discussion 表中斷，不保留引起討論。",
+        "correct": false,
+        "form": "過去式動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g40",
+    "contentRevision": "f2d28963841640cc"
+  },
+  {
+    "base": "reduce",
+    "advanced": "minimize",
+    "cn": "我們應盡量減少不必要的浪費。",
+    "basic": "We should reduce unnecessary waste as much as possible.",
+    "up": "We should ____ unnecessary waste.",
+    "cn2": "提早規劃可以盡量減少不必要的開支。",
+    "basic2": "Planning ahead can reduce unnecessary expenses as much as possible.",
+    "chunks": [
+      "Planning ahead can minimize unnecessary expenses."
+    ],
+    "options": [
+      "minimize",
+      "maximize",
+      "classify",
+      "measure"
+    ],
+    "note": "minimize 表示盡量降低；常見 minimize waste / risks。",
+    "coll": "We should minimize unnecessary waste.",
+    "answer": "minimize",
+    "optionDetails": [
+      {
+        "id": "g41-answer",
+        "text": "minimize",
+        "meaning": "盡量減少",
+        "reason": "minimize 表示盡量降低；常見 minimize waste / risks。 本題搭配：We should minimize unnecessary waste.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g41-d1",
+        "text": "maximize",
+        "meaning": "使最大化",
+        "reason": "maximize waste 與盡量減少相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g41-d2",
+        "text": "classify",
+        "meaning": "分類",
+        "reason": "classify waste 是分類，不保留數量盡量降低。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g41-d3",
+        "text": "measure",
+        "meaning": "測量",
+        "reason": "measure waste 是測量，未表示減少。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g41",
+    "contentRevision": "4b2b0ca22ceed160"
+  },
+  {
+    "base": "follow",
+    "advanced": "maintain",
+    "cn": "遵循健康的生活方式很重要。",
+    "basic": "It is important to follow a healthy lifestyle.",
+    "up": "It is important to ____ a healthy lifestyle.",
+    "cn2": "即使忙碌，我們也應保持規律的作息時間。",
+    "basic2": "We should keep a regular sleep schedule even when we are busy.",
+    "chunks": [
+      "We should maintain a regular sleep schedule even when we are busy."
+    ],
+    "options": [
+      "maintain",
+      "abandon",
+      "describe",
+      "recommend"
+    ],
+    "note": "maintain 表示維持；常見 maintain a healthy lifestyle。 follow 指遵循，maintain 指持續維持；本題比較健康生活方式的實行與延續，不是完全等義。",
+    "coll": "It is important to maintain a healthy lifestyle.",
+    "answer": "maintain",
+    "optionDetails": [
+      {
+        "id": "g42-answer",
+        "text": "maintain",
+        "meaning": "維持",
+        "reason": "maintain 表示維持；常見 maintain a healthy lifestyle。 follow 指遵循，maintain 指持續維持；本題比較健康生活方式的實行與延續，不是完全等義。 本題搭配：It is important to maintain a healthy lifestyle.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g42-d1",
+        "text": "abandon",
+        "meaning": "放棄",
+        "reason": "abandon a healthy lifestyle 是放棄，不保留遵循。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g42-d2",
+        "text": "describe",
+        "meaning": "描述",
+        "reason": "describe a healthy lifestyle 是描述，未表示實行或維持。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g42-d3",
+        "text": "recommend",
+        "meaning": "推薦",
+        "reason": "recommend a healthy lifestyle 是建議別人採行，不表示自己遵循。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g42",
+    "contentRevision": "08d57edaf7d4fe4d"
+  },
+  {
+    "base": "face",
+    "advanced": "encounter",
+    "cn": "青少年經常面對困難。",
+    "basic": "Teenagers often face difficulties.",
+    "up": "Teenagers often ____ difficulties.",
+    "cn2": "旅行時我們可能面對意想不到的挑戰。",
+    "basic2": "We may face unexpected challenges while traveling.",
+    "chunks": [
+      "We may encounter unexpected challenges while traveling."
+    ],
+    "options": [
+      "encounter",
+      "avoid",
+      "predict",
+      "create"
+    ],
+    "note": "encounter 表示遇到問題或困難；常見 encounter difficulties。 face 指面對，encounter 偏遭遇；主動面對與偶然遇到的焦點可不同。",
+    "coll": "Teenagers often encounter difficulties.",
+    "answer": "encounter",
+    "optionDetails": [
+      {
+        "id": "g43-answer",
+        "text": "encounter",
+        "meaning": "遭遇",
+        "reason": "encounter 表示遇到問題或困難；常見 encounter difficulties。 face 指面對，encounter 偏遭遇；主動面對與偶然遇到的焦點可不同。 本題搭配：Teenagers often encounter difficulties.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g43-d1",
+        "text": "avoid",
+        "meaning": "避開",
+        "reason": "avoid difficulties 表避開，face 則面對；不能保留事件關係。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g43-d2",
+        "text": "predict",
+        "meaning": "預測",
+        "reason": "predict difficulties 是事前預測，不是實際遭遇。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g43-d3",
+        "text": "create",
+        "meaning": "造成",
+        "reason": "create difficulties 指製造困難，不保留面對困難。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g43",
+    "contentRevision": "3a79cdd31166f81a"
+  },
+  {
+    "base": "deal with",
+    "advanced": "address",
+    "cn": "學校應處理這個問題。",
+    "basic": "Schools should deal with this issue.",
+    "up": "Schools should ____ this issue.",
+    "cn2": "政府必須處理公共運輸不足的問題。",
+    "basic2": "The government must deal with the lack of public transportation.",
+    "chunks": [
+      "The government must address the lack of public transportation."
+    ],
+    "options": [
+      "address",
+      "ignore",
+      "complicate",
+      "postpone"
+    ],
+    "note": "address 表示著手處理問題；常見 address an issue。 address an issue 表著手處理，不保證問題已解決。",
+    "coll": "Schools should address this issue.",
+    "answer": "address",
+    "optionDetails": [
+      {
+        "id": "g44-answer",
+        "text": "address",
+        "meaning": "處理（動詞）",
+        "reason": "address 表示著手處理問題；常見 address an issue。 address an issue 表著手處理，不保證問題已解決。 本題搭配：Schools should address this issue.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g44-d1",
+        "text": "ignore",
+        "meaning": "忽略",
+        "reason": "ignore this issue 與 deal with 的積極處理相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g44-d2",
+        "text": "complicate",
+        "meaning": "使複雜化",
+        "reason": "complicate this issue 是把問題變複雜，不表示處理。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g44-d3",
+        "text": "postpone",
+        "meaning": "延後",
+        "reason": "postpone this issue 表把議題延後，沒有保留著手處理。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g44",
+    "contentRevision": "49649eebe0e6b537"
+  },
+  {
+    "base": "solve",
+    "advanced": "resolve",
+    "cn": "溝通有助於人們解決問題。",
+    "basic": "Communication helps people solve problems.",
+    "up": "Communication helps people ____ problems.",
+    "cn2": "雙方透過討論化解了誤會。",
+    "basic2": "The two sides cleared up the misunderstanding through discussion.",
+    "chunks": [
+      "The two sides resolved the misunderstanding through discussion."
+    ],
+    "options": [
+      "resolve",
+      "create",
+      "identify",
+      "discuss"
+    ],
+    "note": "resolve 表示解決爭端或問題；常見 resolve conflicts。 resolve 在此指成功解決，不只是討論或辨識。",
+    "coll": "resolve problems / resolve a misunderstanding",
+    "answer": "resolve",
+    "optionDetails": [
+      {
+        "id": "g45-answer",
+        "text": "resolve",
+        "meaning": "解決",
+        "reason": "resolve 表示解決爭端或問題；常見 resolve conflicts。 resolve 在此指成功解決，不只是討論或辨識。 本題搭配：resolve problems / resolve a misunderstanding",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g45-d1",
+        "text": "create",
+        "meaning": "造成",
+        "reason": "create problems 表製造問題，與 solve 相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g45-d2",
+        "text": "identify",
+        "meaning": "辨識",
+        "reason": "identify problems 表找出問題，不保證解決。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g45-d3",
+        "text": "discuss",
+        "meaning": "討論",
+        "reason": "discuss problems 是討論，不必然已解決。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g45",
+    "contentRevision": "3bcfe9823c417a26"
+  },
+  {
+    "base": "build",
+    "advanced": "establish",
+    "cn": "我們應建立良好讀書習慣。",
+    "basic": "We should build good study habits.",
+    "up": "We should ____ good study habits.",
+    "cn2": "學校應建立明確的反霸凌規範。",
+    "basic2": "Schools should set clear rules against bullying.",
+    "chunks": [
+      "Schools should establish clear rules against bullying."
+    ],
+    "options": [
+      "establish",
+      "abandon",
+      "monitor",
+      "describe"
+    ],
+    "note": "establish 表示建立制度或習慣；常見 establish good habits。",
+    "coll": "We should establish good study habits.",
+    "answer": "establish",
+    "optionDetails": [
+      {
+        "id": "g46-answer",
+        "text": "establish",
+        "meaning": "建立",
+        "reason": "establish 表示建立制度或習慣；常見 establish good habits。 本題搭配：We should establish good study habits.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g46-d1",
+        "text": "abandon",
+        "meaning": "放棄",
+        "reason": "abandon habits 表放棄，與 build 相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g46-d2",
+        "text": "monitor",
+        "meaning": "監控",
+        "reason": "monitor habits 表觀察追蹤，不表示建立。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g46-d3",
+        "text": "describe",
+        "meaning": "描述",
+        "reason": "describe habits 表敘述習慣，沒有建立之意。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g46",
+    "contentRevision": "54e847179b28b526"
+  },
+  {
+    "base": "encourage",
+    "advanced": "promote",
+    "cn": "閱讀能促進批判性思考。",
+    "basic": "Reading can encourage critical thinking.",
+    "up": "Reading can ____ critical thinking.",
+    "cn2": "團隊活動能促進學生合作。",
+    "basic2": "Group activities can encourage cooperation among students.",
+    "chunks": [
+      "Group activities can promote cooperation among students."
+    ],
+    "options": [
+      "promote",
+      "discourage",
+      "measure",
+      "require"
+    ],
+    "note": "promote 表示促進發展；常見 promote critical thinking。",
+    "coll": "Reading can promote critical thinking.",
+    "answer": "promote",
+    "optionDetails": [
+      {
+        "id": "g47-answer",
+        "text": "promote",
+        "meaning": "促進；推廣",
+        "reason": "promote 表示促進發展；常見 promote critical thinking。 本題搭配：Reading can promote critical thinking.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g47-d1",
+        "text": "discourage",
+        "meaning": "抑制",
+        "reason": "discourage critical thinking 與 encourage 相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g47-d2",
+        "text": "measure",
+        "meaning": "測量",
+        "reason": "measure critical thinking 表測量能力，不表示促進。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g47-d3",
+        "text": "require",
+        "meaning": "要求",
+        "reason": "require critical thinking 表活動需要這種能力，不表示培養能力。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g47",
+    "contentRevision": "edf7288442ab5529"
+  },
+  {
+    "base": "protect",
+    "advanced": "preserve",
+    "cn": "我們必須保護自然資源。",
+    "basic": "We must protect natural resources.",
+    "up": "We must ____ natural resources.",
+    "cn2": "我們應保護當地的文化傳統。",
+    "basic2": "We should protect local cultural traditions.",
+    "chunks": [
+      "We should preserve local cultural traditions."
+    ],
+    "options": [
+      "preserve",
+      "exploit",
+      "deplete",
+      "catalogue"
+    ],
+    "note": "preserve 表示保存、維護；常見 preserve natural resources。 preserve 強調使其免於損壞或消失；protect 更廣，可指當下防護。",
+    "coll": "We must preserve natural resources.",
+    "answer": "preserve",
+    "optionDetails": [
+      {
+        "id": "g48-answer",
+        "text": "preserve",
+        "meaning": "保存；保護",
+        "reason": "preserve 表示保存、維護；常見 preserve natural resources。 preserve 強調使其免於損壞或消失；protect 更廣，可指當下防護。 本題搭配：We must preserve natural resources.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g48-d1",
+        "text": "exploit",
+        "meaning": "開採；利用",
+        "reason": "exploit natural resources 表利用或開採，不保留保護。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g48-d2",
+        "text": "deplete",
+        "meaning": "耗盡",
+        "reason": "deplete natural resources 與保護相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g48-d3",
+        "text": "catalogue",
+        "meaning": "編目",
+        "reason": "catalogue natural resources 表盤點，不等於維護保存。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g48",
+    "contentRevision": "c05f6d133a27f8cf"
+  },
+  {
+    "base": "understand",
+    "advanced": "comprehend",
+    "cn": "學生需要理解主旨。",
+    "basic": "Students need to understand the main idea.",
+    "up": "Students need to ____ the main idea.",
+    "cn2": "文章核心概念不容易理解。",
+    "basic2": "The main concept of the article is not easy to understand.",
+    "chunks": [
+      "The main concept of the article is not easy to comprehend."
+    ],
+    "options": [
+      "comprehend",
+      "memorize",
+      "reject",
+      "summarize"
+    ],
+    "note": "comprehend 表示理解；常見 comprehend the main idea。 understand 自然常用；comprehend 較正式，不能因較長便視為更好。",
+    "coll": "Students need to comprehend the main idea.",
+    "answer": "comprehend",
+    "optionDetails": [
+      {
+        "id": "g49-answer",
+        "text": "comprehend",
+        "meaning": "理解",
+        "reason": "comprehend 表示理解；常見 comprehend the main idea。 understand 自然常用；comprehend 較正式，不能因較長便視為更好。 本題搭配：Students need to comprehend the main idea.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g49-d1",
+        "text": "memorize",
+        "meaning": "背熟",
+        "reason": "memorize the main idea 可以自然成立，但背熟不保證理解。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g49-d2",
+        "text": "reject",
+        "meaning": "否定",
+        "reason": "reject the main idea 表不接受，不是理解其意。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g49-d3",
+        "text": "summarize",
+        "meaning": "摘要",
+        "reason": "summarize the main idea 表濃縮轉述，並不等於理解這一心智狀態。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g49",
+    "contentRevision": "f3ad5d377fb1d8e3"
+  },
+  {
+    "base": "improve",
+    "advanced": "strengthen",
+    "cn": "團隊合作可以改善人際關係。",
+    "basic": "Teamwork can improve relationships.",
+    "up": "Teamwork can ____ relationships.",
+    "cn2": "共同克服挑戰可以增進彼此的信任。",
+    "basic2": "Overcoming challenges together can improve mutual trust.",
+    "chunks": [
+      "Overcoming challenges together can strengthen mutual trust."
+    ],
+    "options": [
+      "strengthen",
+      "weaken",
+      "describe",
+      "complicate"
+    ],
+    "note": "strengthen 表示強化；常見 strengthen relationships。 improve 指改善，strengthen 強調關係或信任更強，屬方向一致的焦點變化。",
+    "coll": "Teamwork can strengthen relationships.",
+    "answer": "strengthen",
+    "optionDetails": [
+      {
+        "id": "g50-answer",
+        "text": "strengthen",
+        "meaning": "強化",
+        "reason": "strengthen 表示強化；常見 strengthen relationships。 improve 指改善，strengthen 強調關係或信任更強，屬方向一致的焦點變化。 本題搭配：Teamwork can strengthen relationships.",
+        "correct": true,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g50-d1",
+        "text": "weaken",
+        "meaning": "削弱",
+        "reason": "weaken relationships 與 improve 相反。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g50-d2",
+        "text": "describe",
+        "meaning": "描述",
+        "reason": "describe relationships 只敘述關係，沒有改善。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      },
+      {
+        "id": "g50-d3",
+        "text": "complicate",
+        "meaning": "使複雜化",
+        "reason": "complicate relationships 表使關係複雜，未保留正向改善。",
+        "correct": false,
+        "form": "原形動詞／動詞片語"
+      }
+    ],
+    "questionId": "gsat-g50",
+    "contentRevision": "b39ed29f58e345d5"
+  },
+  {
+    "base": "advantage",
+    "advanced": "benefit",
+    "cn": "線上學習有許多益處。",
+    "basic": "Online learning offers many advantages.",
+    "up": "Online learning offers many ____.",
+    "cn2": "規律運動對長者有許多好處。",
+    "basic2": "Regular exercise offers many advantages for older adults.",
+    "chunks": [
+      "Regular exercise offers many benefits for older adults."
+    ],
+    "options": [
+      "benefits",
+      "drawbacks",
+      "restrictions",
+      "obligations"
+    ],
+    "note": "benefit 表示益處；常見 the benefits of online learning。 advantages 指有利之處；benefits 強調帶來的好處，兩者在本題可合理對應。",
+    "coll": "Online learning offers many benefits.",
+    "answer": "benefits",
+    "optionDetails": [
+      {
+        "id": "g51-answer",
+        "text": "benefits",
+        "meaning": "益處（複數名詞）",
+        "reason": "benefit 表示益處；常見 the benefits of online learning。 advantages 指有利之處；benefits 強調帶來的好處，兩者在本題可合理對應。 本題搭配：Online learning offers many benefits.",
+        "correct": true,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g51-d1",
+        "text": "drawbacks",
+        "meaning": "缺點",
+        "reason": "drawbacks 表缺點，與 advantages 相反。",
+        "correct": false,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g51-d2",
+        "text": "restrictions",
+        "meaning": "限制",
+        "reason": "restrictions 表限制條件，不保留優點。",
+        "correct": false,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g51-d3",
+        "text": "obligations",
+        "meaning": "義務",
+        "reason": "obligations 表必須承擔的責任，不是益處。",
+        "correct": false,
+        "form": "複數名詞"
+      }
+    ],
+    "questionId": "gsat-g51",
+    "contentRevision": "ed59d7217a449953"
+  },
+  {
+    "base": "disadvantage",
+    "advanced": "drawback",
+    "cn": "一項主要缺點是成本高。",
+    "basic": "One major disadvantage is the high cost.",
+    "up": "One major ____ is the high cost.",
+    "cn2": "有限的面對面互動是遠距學習的一項缺點。",
+    "basic2": "Limited face-to-face interaction is a disadvantage of distance learning.",
+    "chunks": [
+      "Limited face-to-face interaction is a drawback of distance learning."
+    ],
+    "options": [
+      "drawback",
+      "benefit",
+      "requirement",
+      "objective"
+    ],
+    "note": "drawback 表示缺點、不利之處；常見 a major drawback。",
+    "coll": "One major drawback is the high cost.",
+    "answer": "drawback",
+    "optionDetails": [
+      {
+        "id": "g52-answer",
+        "text": "drawback",
+        "meaning": "缺點",
+        "reason": "drawback 表示缺點、不利之處；常見 a major drawback。 本題搭配：One major drawback is the high cost.",
+        "correct": true,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g52-d1",
+        "text": "benefit",
+        "meaning": "益處",
+        "reason": "benefit 表優點，與 disadvantage 相反。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g52-d2",
+        "text": "requirement",
+        "meaning": "要求",
+        "reason": "requirement 表必須符合的條件，不等於缺點。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g52-d3",
+        "text": "objective",
+        "meaning": "目標",
+        "reason": "objective 表企圖達成的目的，不是成本高這項不利之處。",
+        "correct": false,
+        "form": "單數名詞"
+      }
+    ],
+    "questionId": "gsat-g52",
+    "contentRevision": "34ef1c9bfd8048e9"
+  },
+  {
+    "base": "results",
+    "advanced": "consequence",
+    "cn": "這項決定帶來了意料之外的結果。",
+    "basic": "The decision had unexpected results.",
+    "up": "The decision had unexpected ____.",
+    "cn2": "忽略小問題可能造成嚴重的影響。",
+    "basic2": "Ignoring small problems can lead to serious effects.",
+    "chunks": [
+      "Ignoring small problems can have serious consequences."
+    ],
+    "options": [
+      "consequences",
+      "intentions",
+      "requirements",
+      "alternatives"
+    ],
+    "note": "consequences 指行為或事件造成的結果，常帶負面語氣，但不必然都是壞結果。results 較中性；此題保留「意料之外的結果」。",
+    "coll": "unexpected consequences / serious consequences",
+    "answer": "consequences",
+    "optionDetails": [
+      {
+        "id": "g53-answer",
+        "text": "consequences",
+        "meaning": "後果",
+        "reason": "consequences 指行為或事件造成的結果，常帶負面語氣，但不必然都是壞結果。results 較中性；此題保留「意料之外的結果」。 本題搭配：unexpected consequences / serious consequences",
+        "correct": true,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g53-d1",
+        "text": "intentions",
+        "meaning": "意圖",
+        "reason": "intentions 是決策者的意圖，不是決策產生的結果。",
+        "correct": false,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g53-d2",
+        "text": "requirements",
+        "meaning": "要求",
+        "reason": "requirements 是須符合的條件，不是決策之後產生的結果。",
+        "correct": false,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g53-d3",
+        "text": "alternatives",
+        "meaning": "替代選擇",
+        "reason": "alternatives 是可改選的方案，與 results 的結果不同。",
+        "correct": false,
+        "form": "複數名詞"
+      }
+    ],
+    "questionId": "gsat-g53",
+    "contentRevision": "0dc40ba1b0d1cbd1"
+  },
+  {
+    "base": "reason",
+    "advanced": "factor",
+    "cn": "壓力是造成睡眠不佳的一個主要原因。",
+    "basic": "Stress is a major reason for poor sleep.",
+    "up": "Stress is a major ____ contributing to poor sleep.",
+    "cn2": "家庭支持是青少年變得更有自信的一個重要原因。",
+    "basic2": "Family support is an important reason why teenagers become more confident.",
+    "chunks": [
+      "Family support is an important factor in helping teenagers become more confident."
+    ],
+    "options": [
+      "factor",
+      "barrier",
+      "remedy",
+      "symptom"
+    ],
+    "note": "reason 指原因；factor 指促成結果的因素，通常只是多個因素之一。contributing to poor sleep 保留睡眠不佳的負面結果，不把因素說成唯一原因。 factor 不表示唯一或充分原因；保留 poor sleep，不把影響睡眠籠統視為等義。",
+    "coll": "a factor contributing to poor sleep / a factor in helping someone do something",
+    "answer": "factor",
+    "optionDetails": [
+      {
+        "id": "g54-answer",
+        "text": "factor",
+        "meaning": "因素",
+        "reason": "reason 指原因；factor 指促成結果的因素，通常只是多個因素之一。contributing to poor sleep 保留睡眠不佳的負面結果，不把因素說成唯一原因。 factor 不表示唯一或充分原因；保留 poor sleep，不把影響睡眠籠統視為等義。 本題搭配：a factor contributing to poor sleep / a factor in helping someone do something",
+        "correct": true,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g54-d1",
+        "text": "barrier",
+        "meaning": "阻礙",
+        "reason": "barrier contributing to poor sleep 把壓力說成阻擋物，未準確保留造成睡不好的原因角色。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g54-d2",
+        "text": "remedy",
+        "meaning": "療法",
+        "reason": "remedy 是改善問題的方法，不是造成睡不好的原因。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g54-d3",
+        "text": "symptom",
+        "meaning": "症狀",
+        "reason": "symptom 是表現出的徵象，不保留原句的成因方向。",
+        "correct": false,
+        "form": "單數名詞"
+      }
+    ],
+    "questionId": "gsat-g54",
+    "contentRevision": "61e57f0002f1b909"
+  },
+  {
+    "base": "way",
+    "advanced": "approach",
+    "cn": "我們需要不同方式處理問題。",
+    "basic": "We need a different way to deal with this problem.",
+    "up": "We need a different ____ for dealing with this problem.",
+    "cn2": "合作是解決社區問題的有效方式。",
+    "basic2": "Working together is an effective way to solve community problems.",
+    "chunks": [
+      "Working together is an effective approach to solving community problems."
+    ],
+    "options": [
+      "approach",
+      "budget",
+      "deadline",
+      "location"
+    ],
+    "note": "approach 表示處理問題的方法；常見 an approach to a problem。 approach to 後接名詞或動名詞，指處理方法；solution 指問題的解答，可能是方法的成果。",
+    "coll": "an approach for dealing with a problem / an approach to solving problems",
+    "answer": "approach",
+    "optionDetails": [
+      {
+        "id": "g55-answer",
+        "text": "approach",
+        "meaning": "方法；途徑",
+        "reason": "approach 表示處理問題的方法；常見 an approach to a problem。 approach to 後接名詞或動名詞，指處理方法；solution 指問題的解答，可能是方法的成果。 本題搭配：an approach for dealing with a problem / an approach to solving problems",
+        "correct": true,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g55-d1",
+        "text": "budget",
+        "meaning": "預算",
+        "reason": "a different budget for dealing with this problem 是處理問題的另一份預算，不保留 way 的方法。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g55-d2",
+        "text": "deadline",
+        "meaning": "期限",
+        "reason": "a different deadline for dealing with this problem 指處理期限，未說處理方法不同。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g55-d3",
+        "text": "location",
+        "meaning": "地點",
+        "reason": "a different location for dealing with this problem 指處理地點，未保留方法的差異。",
+        "correct": false,
+        "form": "單數名詞"
+      }
+    ],
+    "questionId": "gsat-g55",
+    "contentRevision": "8fd64e06a3b327f7"
+  },
+  {
+    "base": "goal",
+    "advanced": "objective",
+    "cn": "我們的主要目標是減少浪費。",
+    "basic": "Our main goal is to reduce waste.",
+    "up": "Our main ____ is to reduce waste.",
+    "cn2": "她的主要目標是提升口說能力。",
+    "basic2": "Her main goal is to improve her speaking skills.",
+    "chunks": [
+      "Her main objective is to improve her speaking skills."
+    ],
+    "options": [
+      "objective",
+      "obstacle",
+      "obligation",
+      "resource"
+    ],
+    "note": "objective 表示目標；常見 the main objective is to ...。",
+    "coll": "Our main objective is to reduce waste.",
+    "answer": "objective",
+    "optionDetails": [
+      {
+        "id": "g56-answer",
+        "text": "objective",
+        "meaning": "目標（名詞）",
+        "reason": "objective 表示目標；常見 the main objective is to ...。 本題搭配：Our main objective is to reduce waste.",
+        "correct": true,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g56-d1",
+        "text": "obstacle",
+        "meaning": "障礙",
+        "reason": "main obstacle 是主要阻礙，不保留想達成的目標。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g56-d2",
+        "text": "obligation",
+        "meaning": "義務",
+        "reason": "obligation 為必須承擔的責任；goal 只表希望達成的目標，未加入義務。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g56-d3",
+        "text": "resource",
+        "meaning": "資源",
+        "reason": "main resource 是主要資源，不是減少浪費這個目的。",
+        "correct": false,
+        "form": "單數名詞"
+      }
+    ],
+    "questionId": "gsat-g56",
+    "contentRevision": "51aa46b4728f1609"
+  },
+  {
+    "base": "effect",
+    "advanced": "impact",
+    "cn": "科技對社會有深遠影響。",
+    "basic": "Technology has a profound effect on society.",
+    "up": "Technology has a profound ____ on society.",
+    "cn2": "社群媒體對青少年自我形象有很大影響。",
+    "basic2": "Social media has a strong effect on teenagers' self-image.",
+    "chunks": [
+      "Social media has a strong impact on teenagers' self-image."
+    ],
+    "options": [
+      "impact",
+      "reliance",
+      "burden",
+      "claim"
+    ],
+    "note": "impact 表示影響；常見 have an impact on。",
+    "coll": "Technology has a profound impact on society.",
+    "answer": "impact",
+    "optionDetails": [
+      {
+        "id": "g57-answer",
+        "text": "impact",
+        "meaning": "影響",
+        "reason": "impact 表示影響；常見 have an impact on。 本題搭配：Technology has a profound impact on society.",
+        "correct": true,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g57-d1",
+        "text": "reliance",
+        "meaning": "依賴",
+        "reason": "reliance on society 表依賴社會，把原句對社會產生影響的方向改變。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g57-d2",
+        "text": "burden",
+        "meaning": "負擔",
+        "reason": "burden on society 加入負面負擔，effect 未限定負面。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g57-d3",
+        "text": "claim",
+        "meaning": "主張",
+        "reason": "claim on society 不表示科技造成的影響。",
+        "correct": false,
+        "form": "單數名詞"
+      }
+    ],
+    "questionId": "gsat-g57",
+    "contentRevision": "feebc4a9cdff6b79"
+  },
+  {
+    "base": "barrier",
+    "advanced": "obstacle",
+    "cn": "恐懼可能是通往成功之路上的阻礙。",
+    "basic": "Fear can be a barrier on the path to success.",
+    "up": "Fear can be an ____ on the path to success.",
+    "cn2": "缺乏自信不應成為追求夢想的阻礙。",
+    "basic2": "A lack of confidence should not be a barrier to pursuing dreams.",
+    "chunks": [
+      "A lack of confidence should not be an obstacle to pursuing dreams."
+    ],
+    "options": [
+      "obstacle",
+      "asset",
+      "advantage",
+      "incentive"
+    ],
+    "note": "obstacle 表示障礙；常見 an obstacle to success。",
+    "coll": "Fear can become an obstacle to success.",
+    "answer": "obstacle",
+    "optionDetails": [
+      {
+        "id": "g58-answer",
+        "text": "obstacle",
+        "meaning": "障礙",
+        "reason": "obstacle 表示障礙；常見 an obstacle to success。 本題搭配：Fear can become an obstacle to success.",
+        "correct": true,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g58-d1",
+        "text": "asset",
+        "meaning": "助力",
+        "reason": "an asset on the path to success 表有助成功的資產或優勢，與 barrier 相反。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g58-d2",
+        "text": "advantage",
+        "meaning": "優勢",
+        "reason": "an advantage on the path to success 表有利條件，並非阻礙。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g58-d3",
+        "text": "incentive",
+        "meaning": "誘因",
+        "reason": "an incentive on the path to success 表促使前進的動力，不保留障礙。",
+        "correct": false,
+        "form": "單數名詞"
+      }
+    ],
+    "questionId": "gsat-g58",
+    "contentRevision": "1ead289f8379fd14"
+  },
+  {
+    "base": "ability",
+    "advanced": "capability",
+    "cn": "科技可以提升學生的學習能力。",
+    "basic": "Technology can improve students' learning abilities.",
+    "up": "Technology can improve students' learning ____.",
+    "cn2": "這項訓練可以提升團隊解決問題的能力。",
+    "basic2": "The training can improve the team's ability to solve problems.",
+    "chunks": [
+      "The training can improve the team's capability to solve problems."
+    ],
+    "options": [
+      "capabilities",
+      "difficulties",
+      "preferences",
+      "routines"
+    ],
+    "note": "capability 表示能力；常見 learning capabilities。 ability 常用且自然；capability 偏具有完成任務的能力或潛能，本題不再同時改 improve 為 strengthen。",
+    "coll": "Technology can improve students' learning capabilities.",
+    "answer": "capabilities",
+    "optionDetails": [
+      {
+        "id": "g59-answer",
+        "text": "capabilities",
+        "meaning": "能力",
+        "reason": "capability 表示能力；常見 learning capabilities。 ability 常用且自然；capability 偏具有完成任務的能力或潛能，本題不再同時改 improve 為 strengthen。 本題搭配：Technology can improve students' learning capabilities.",
+        "correct": true,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g59-d1",
+        "text": "difficulties",
+        "meaning": "困難",
+        "reason": "learning difficulties 指學習困難，與 abilities 的能力不同。",
+        "correct": false,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g59-d2",
+        "text": "preferences",
+        "meaning": "偏好",
+        "reason": "learning preferences 指學習偏好，不是能做什麼的能力。",
+        "correct": false,
+        "form": "複數名詞"
+      },
+      {
+        "id": "g59-d3",
+        "text": "routines",
+        "meaning": "常規",
+        "reason": "learning routines 指學習慣例，不等於能力。",
+        "correct": false,
+        "form": "複數名詞"
+      }
+    ],
+    "questionId": "gsat-g59",
+    "contentRevision": "e9af742944f2d934"
+  },
+  {
+    "base": "choice",
+    "advanced": "alternative",
+    "cn": "大眾運輸是另一種可以代替開車的選擇。",
+    "basic": "Public transportation is another option that can replace driving.",
+    "up": "Public transportation is an ____ that can replace driving.",
+    "cn2": "騎自行車是短程出行時開車以外的另一種選擇。",
+    "basic2": "Cycling is another option instead of driving for short trips.",
+    "chunks": [
+      "Cycling is an alternative to driving for short trips."
+    ],
+    "options": [
+      "alternative",
+      "obligation",
+      "achievement",
+      "obstacle"
+    ],
+    "note": "alternative 表示另一種選擇；常見 an alternative to driving。 alternative to driving 是開車以外的替代；approach to driving 是開車的方法。",
+    "coll": "Public transportation is an alternative to driving.",
+    "answer": "alternative",
+    "optionDetails": [
+      {
+        "id": "g60-answer",
+        "text": "alternative",
+        "meaning": "替代方案",
+        "reason": "alternative 表示另一種選擇；常見 an alternative to driving。 alternative to driving 是開車以外的替代；approach to driving 是開車的方法。 本題搭配：Public transportation is an alternative to driving.",
+        "correct": true,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g60-d1",
+        "text": "obligation",
+        "meaning": "義務",
+        "reason": "an obligation 是必須履行的責任，不保留 another option 所指的選擇。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g60-d2",
+        "text": "achievement",
+        "meaning": "成就",
+        "reason": "an achievement 是達成的成果，不是供人選用的交通替代方案。",
+        "correct": false,
+        "form": "單數名詞"
+      },
+      {
+        "id": "g60-d3",
+        "text": "obstacle",
+        "meaning": "障礙",
+        "reason": "an obstacle 是阻礙，並非能取代開車的選擇。",
+        "correct": false,
+        "form": "單數名詞"
+      }
+    ],
+    "questionId": "gsat-g60",
+    "contentRevision": "9dc286bad19adb95"
+  }
+];
+const KEY='gsat-vocab-v14-full';const OLD_KEY='gsat-vocab-v13-full';const PREF_KEY='gsat-vocab-v14-preferences';const META='_schemaVersion';const CURRENT_SCHEMA=3;
+function readStore(key){try{const v=JSON.parse(localStorage.getItem(key));return v&&typeof v==='object'&&!Array.isArray(v)?v:null}catch(e){return null}}
+function cleanRecord(v,k){if(!v||typeof v!=='object'||Array.isArray(v))return null;const retry=k.startsWith('_retry_'),writing=k.endsWith('-b');let x={tries:Number.isInteger(v.tries)&&v.tries>=0&&v.tries<=2?v.tries:0,done:v.done===true,firstWrong:v.firstWrong===true,shown:v.shown===true,completed:v.completed===true||v.shown===true,writing:typeof v.writing==='string'?v.writing:'',message:typeof v.message==='string'?v.message.slice(0,500):'',attempts:Array.isArray(v.attempts)?v.attempts.filter(a=>a&&typeof a.word==='string'&&typeof a.ok==='boolean').slice(0,2):[],chosen:Array.isArray(v.chosen)?v.chosen.filter(Number.isInteger):[]};if(Array.isArray(v.optionOrder)&&v.optionOrder.length===4&&new Set(v.optionOrder).size===4&&v.optionOrder.every(j=>Number.isInteger(j)&&j>=0&&j<4))x.optionOrder=v.optionOrder;for(const field of ['recordedAt','runId','questionId','contentRevision','snapshot','optionIds'])if(Object.prototype.hasOwnProperty.call(v,field))x[field]=v[field];if(retry){delete x.firstWrong;delete x.completed;delete x.shown;delete x.writing}if(writing){delete x.optionOrder}return x}
+function cleanState(raw){const out={};for(let i=0;i<60;i++)for(const suffix of ['-a','-b']){const k=i+suffix;if(raw&&Object.prototype.hasOwnProperty.call(raw,k)){const v=cleanRecord(raw[k],k);if(v)out[k]=v}}for(let i=0;i<60;i++){const k='_retry_'+i+'-a';if(raw&&Object.prototype.hasOwnProperty.call(raw,k)){const v=cleanRecord(raw[k],k);if(v)out[k]=v}}if(raw&&raw._retryHistory&&typeof raw._retryHistory==='object'&&!Array.isArray(raw._retryHistory)){out._retryHistory={};for(let i=0;i<60;i++){const k=i+'-a',arr=raw._retryHistory[k];if(Array.isArray(arr))out._retryHistory[k]=arr.map(x=>cleanRecord(x,'_retry_'+k)).filter(Boolean)}}if(raw&&Array.isArray(raw._contentArchives))out._contentArchives=raw._contentArchives;out._contentRevision='v14-reviewed-1';out[META]=CURRENT_SCHEMA;return out}
+const stored=readStore(KEY),legacy=readStore(OLD_KEY);let corruptCurrent=(()=>{try{const raw=localStorage.getItem(KEY);if(raw!==null)return !stored;const old=localStorage.getItem(OLD_KEY);return old!==null&&!legacy}catch(e){return true}})();const initialRaw=stored||legacy||{};
+function migrateContent(raw){const result=cleanState(raw);const mismatched=DATA.some((d,i)=>['-a','-b'].some(suffix=>{const r=raw[i+suffix];return r&&r.contentRevision&&r.contentRevision!==d.contentRevision}));if((raw._contentRevision!=='v14-reviewed-1'||mismatched)&&Object.keys(raw).some(k=>/^\d+-[ab]$/.test(k)||k.startsWith('_retry_'))){const archives=Array.isArray(raw._contentArchives)?raw._contentArchives.slice():[];archives.push({source:stored?'V14 先前題庫（版本無法確認）':'V13',archivedAt:new Date().toISOString(),raw:JSON.parse(JSON.stringify(raw))});return {_schemaVersion:CURRENT_SCHEMA,_contentRevision:'v14-reviewed-1',_contentArchives:archives};}return result;}
+let state=migrateContent(initialRaw);const sourceRaw=(()=>{try{return {v14:localStorage.getItem(KEY),v13:localStorage.getItem(OLD_KEY)}}catch(e){return {unavailable:true}}})();function canonical(v){if(Array.isArray(v))return v.map(canonical);if(v&&typeof v==='object')return Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])]));return v}let migrationBackedUp=!!(stored&&stored._schemaVersion===CURRENT_SCHEMA&&stored._contentRevision==='v14-reviewed-1'&&JSON.stringify(canonical(stored))===JSON.stringify(canonical(state)));let saveError=false;let conflictError=corruptCurrent;let lastSavedRaw=null;try{lastSavedRaw=localStorage.getItem(KEY)}catch(e){saveError=true}let onlyWrong=false,font=20,currentRound=null;let retryState={};let prefs={};try{prefs=JSON.parse(localStorage.getItem(PREF_KEY))||{}}catch(e){}if(Number.isInteger(prefs.font))font=Math.min(28,Math.max(17,prefs.font));if(Number.isInteger(prefs.round)&&prefs.round>=0&&prefs.round<6)currentRound=prefs.round;if(prefs.onlyWrong===true&&currentRound!==null)onlyWrong=true;const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const get=k=>state[k]||{tries:0,done:false,firstWrong:false,chosen:[],message:'',shuffle:0,shown:false,writing:'',completed:false,attempts:[]};const complete=s=>!!(s.completed||s.shown);const active=k=>onlyWrong&&k.endsWith('-a')?(retryState[k]||(retryState[k]=state['_retry_'+k]||{tries:0,done:false,message:'',attempts:[]})):get(k);function save(){try{if(corruptCurrent){warning();return false}const live=localStorage.getItem(KEY);if(live!==lastSavedRaw){conflictError=true;warning();return false}if(!migrationBackedUp){const backupKey=KEY+'-backup-'+Date.now()+'-'+Math.random().toString(36).slice(2);localStorage.setItem(backupKey,JSON.stringify({sourceRaw,createdAt:new Date().toISOString()}));migrationBackedUp=true}state[META]=CURRENT_SCHEMA;const payload=JSON.stringify(state);localStorage.setItem(KEY,payload);lastSavedRaw=payload;saveError=false;conflictError=false;warning();return true}catch(e){saveError=true;warning();return false}}function warning(){const blocked=corruptCurrent||conflictError||saveError;document.getElementById('saveWarning').textContent=corruptCurrent?'儲存資料無法讀取。本次內容暫存在記憶體；請匯出完整備份後復原。':conflictError?'其他分頁已更新資料。本分頁停止儲存，但保留最新練寫。請先匯出完整備份，再重新整理；不要直接關閉本頁。':saveError?'儲存失敗。最新練寫仍保留在本頁記憶體，尚未安全保存；可重試或匯出完整備份。':'';document.getElementById('retrySave').hidden=!blocked||corruptCurrent;document.getElementById('recoverStore').hidden=!corruptCurrent;}function savePrefs(){try{localStorage.setItem(PREF_KEY,JSON.stringify({font,round:currentRound,dark:document.body.classList.contains('dark'),onlyWrong}))}catch(e){}}function sent(label,txt,style){return '<div class="sentence '+style+'"><div class="sentence-label">'+label+'</div><div class="en">'+txt+'</div></div>'}function orderFor(i,n,round=0){const k=i+'-a',record=get(k);if(Array.isArray(record.optionOrder)&&record.optionOrder.length===n&&record.optionOrder.every(j=>Number.isInteger(j)&&j>=0&&j<n)&&new Set(record.optionOrder).size===n)return record.optionOrder;const order=Array.from({length:n},(_,j)=>j);for(let j=n-1;j>0;j--){const swap=Math.floor(Math.random()*(j+1));[order[j],order[swap]]=[order[swap],order[j]]}record.optionOrder=order;record.optionIds=order.map(j=>DATA[i].optionDetails[j].id);snapshotFor(k,record);state[k]=record;save();return order}
+function optionAnalysis(d){return '<div class="option-analysis"><b>四個選項中文說明</b>'+d.optionDetails.map(o=>'<p><b>'+esc(o.text)+'</b>：'+esc(o.meaning)+'（'+esc(o.form)+'）'+(o.correct?'（本題最合適）':'')+'<br>'+esc(o.reason)+'</p>').join('')+'<p class="option-caution">判斷標準：盡量保留基本句意思。其他選項可能形成自然的另一句話，並不因此是錯誤英文。</p></div>'}
 function exercise(d,i,mode){
-const k=i+'-'+mode,s=get(k);
-if(onlyWrong&&!get(i+'-a').firstWrong)return '';
+const k=i+'-'+mode,s=active(k);
+if(onlyWrong&&!get(i+'-a').firstWrong)return '';if(mode==='b'&&!onlyWrong&&!get(i+'-a').done)return '<div class="exercise"><div class="ex-title">② 自主英文練寫</div><div class="write-tip">完成第一題後，即可進行英文練寫。</div></div>';if(mode==='b'&&onlyWrong)return '';
 let part='';
 if(mode==='a'){
 const up=s.done?esc(d.up).replace('____','<strong>'+esc(d.answer)+'</strong>'):esc(d.up).replace('____','________');
-part='<div class="stem-basic en">'+esc(d.basic)+'</div>'+sent('升級句',up,'upgrade')+'<div class="choices">'+d.options.map(w=>'<button class="choice" data-choice="'+k+'" data-word="'+esc(w)+'" '+(s.done?'disabled':'')+'>'+esc(w)+'</button>').join('')+'</div>';
+part='<div class="stem-basic en">'+esc(d.basic)+'</div>'+sent('升級句',up,'upgrade')+'<div class="choices">'+orderFor(i,4).map(j=>{let w=d.options[j],selected=(s.attempts||[]).some(a=>a.word===w);return '<button class="choice '+(selected?(w===d.answer?'selected':'incorrect'):'')+'" data-choice="'+k+'" data-word="'+esc(w)+'" '+(s.done?'disabled':'')+'>'+esc(w)+'</button>'}).join('')+'</div>';
 }else{
-part='<div class="stem-basic en">'+esc(d.basic2)+'</div><div class="write-target">目標字詞：'+esc(d.advanced)+'</div><div class="write-tip">可在腦中組句、口頭回答、寫在紙上或輸入英文；不強制輸入。</div><textarea class="write-area" data-writing="'+k+'" placeholder="自由練寫（非必填）">'+esc(s.writing||'')+'</textarea><div class="write-actions"><button class="action primary" data-show-answer="'+k+'">'+(s.shown?'隱藏參考答案':'查看參考答案')+'</button><button class="action" data-reset-writing="'+k+'">清除練寫</button></div>'+(s.shown?'<div class="write-answer"><b>參考答案</b><div class="en">'+esc(d.chunks.join(' '))+'</div><div class="write-tip">'+esc(d.note)+'</div></div>':'');
+part='<div class="write-target">目標字詞：'+esc(d.advanced)+'</div><div class="write-tip">可在腦中組句、口頭回答、寫在紙上或輸入英文；不強制輸入。</div><textarea class="write-area" data-writing="'+k+'" placeholder="自由練寫（非必填）">'+esc(s.writing||'')+'</textarea><div class="write-actions"><button class="action primary" data-show-answer="'+k+'">'+(s.shown?'隱藏參考答案':'查看參考答案')+'</button><button class="action" data-reset-writing="'+k+'">清除練寫</button></div>'+(s.shown?'<div class="write-answer"><b>參考答案</b><div class="en">'+esc(d.chunks.join(' '))+'</div><div class="write-tip">'+esc(d.note)+'</div></div>':'');
 }
-return '<div class="exercise"><div class="ex-title">'+(mode==='a'?'① 選擇進階字詞':'② 自主英文練寫')+'</div><div class="cn">'+esc(mode==='a'?d.cn:d.cn2)+'</div>'+part+(s.message?'<div class="feedback '+(s.message==='再試一次'?'retry':'')+'">'+esc(s.message)+'</div>':'')+(mode==='a'?'<div class="exercise-actions"><button class="action" data-reset-question="'+k+'">清除重做</button></div>':'')+'</div>';
-}function render(){if(currentRound===null){renderHome();return;}const begin=currentRound*10,finish=begin+10;document.getElementById('home').hidden=true;document.getElementById('practice').hidden=false;document.getElementById('roundTitle').textContent='第 '+(currentRound+1)+' 回｜第 '+(begin+1)+'～'+finish+' 組';let out=DATA.map((d,i)=>{if(i<begin||i>=finish)return '';let a=exercise(d,i,'a'),b=exercise(d,i,'b');if(!a&&!b)return '';return '<section class="group"><div class="group-title">'+String(i+1).padStart(2,'0')+'｜'+esc(d.base)+' → '+esc(d.advanced)+'</div>'+a+b+(get(i+'-a').done&&get(i+'-b').shown?'<details><summary>字詞用法與常見搭配</summary><p>'+esc(d.note)+'</p><p><b>常見搭配：</b>'+esc(d.coll)+'</p></details>':'')+'</section>'}).join('');document.getElementById('list').innerHTML=out;let all=DATA.slice(begin,finish).flatMap((d,j)=>[get((begin+j)+'-a'),get((begin+j)+'-b')]),done=all.filter(s=>s.done||s.shown).length,wrong=all.filter(s=>s.firstWrong).length;document.getElementById('status').textContent='已完成 '+done+' / 20 題';document.getElementById('remaining').textContent='待加強 '+wrong+' 題';document.getElementById('fill').style.width=done/20*100+'%';document.getElementById('end').textContent=onlyWrong&&!out?'目前沒有需要重練的題目。':done===20?'本回練習完成！':'';document.getElementById('retry').textContent=onlyWrong?'返回全部題目':'重練錯題'}function renderHome(){document.getElementById('home').hidden=false;document.getElementById('practice').hidden=true;document.getElementById('home').innerHTML='<div class="round-grid">'+Array.from({length:6},(_,r)=>{let done=0,wrong=0;for(let i=r*10;i<r*10+10;i++)for(let m of ['a','b']){let s=get(i+'-'+m);if(s.done||s.shown)done++;if(s.firstWrong)wrong++}return '<button class="round-card" data-round="'+r+'"><strong>第 '+(r+1)+' 回</strong><small>第 '+(r*10+1)+'～'+(r*10+10)+' 組｜完成 '+done+'/20 題｜待加強 '+wrong+' 題</small><div class="round-meter"><span style="width:'+(done/20*100)+'%"></span></div></button>'}).join('')+'</div>';}function update(k,s){state[k]=s;save();render()}function judge(k,ok){let s=get(k);if(s.done)return;s.tries++;if(!ok)s.firstWrong=true;if(ok){s.done=true;s.message='答對了！'}else if(s.tries===1){s.message='再試一次'}else{s.done=true;s.message='正確答案：'+(k.endsWith('-b')?DATA[Number(k.split('-')[0])].chunks.join(' '):(DATA[Number(k.split('-')[0])].answer||DATA[Number(k.split('-')[0])].advanced))}update(k,s)}
-document.addEventListener('input',e=>{const k=e.target.dataset.writing;if(k){let s=get(k);s.writing=e.target.value;state[k]=s;save()}});
-document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.hasAttribute('data-round')){currentRound=Number(b.dataset.round);onlyWrong=false;render();window.scrollTo({top:0,behavior:'smooth'});return}if(b.hasAttribute('data-reset-all')){resetAll();return}let w=b.dataset.showAnswer;if(w){let s=get(w);s.shown=!s.shown;state[w]=s;save();render();return}w=b.dataset.resetWriting;if(w){let s=get(w);s.writing='';s.shown=false;state[w]=s;save();render();return}let k=b.dataset.resetQuestion;if(k){const previous=get(k);state[k]={tries:0,done:false,firstWrong:false,chosen:[],message:'',shuffle:(previous.shuffle||0)+1};save();render();return}k=b.dataset.choice;if(k){judge(k,b.dataset.word===(DATA[Number(k.split('-')[0])].answer||DATA[Number(k.split('-')[0])].advanced));return}k=b.dataset.add;if(k){let s=get(k);if(s.done)return;s.chosen.push(Number(b.dataset.index));update(k,s);return}k=b.dataset.remove;if(k){let s=get(k);if(s.done)return;s.chosen.splice(Number(b.dataset.index),1);update(k,s);return}k=b.dataset.clearSelection;if(k){let s=get(k);if(s.done)return;s.chosen=[];update(k,s);return}k=b.dataset.check;if(k){let s=get(k),d=DATA[Number(k.split('-')[0])];if(s.done||s.chosen.length!==d.chunks.length)return;let ok=s.chosen.every((v,i)=>v===i);s.chosen=[];state[k]=s;judge(k,ok);return}});function resetAll(){if(currentRound===null)return;if(confirm('確定要清除本回 20 題的作答紀錄嗎？')){for(let i=currentRound*10;i<currentRound*10+10;i++){delete state[i+'-a'];delete state[i+'-b']}onlyWrong=false;save();render();window.scrollTo({top:0,behavior:'smooth'})}}document.getElementById('reset').onclick=resetAll;function goHome(){currentRound=null;onlyWrong=false;render();window.scrollTo({top:0,behavior:'smooth'})}document.getElementById('backHome').onclick=goHome;document.getElementById('backBottom').onclick=goHome;document.getElementById('retry').onclick=()=>{onlyWrong=!onlyWrong;if(onlyWrong){for(let i=currentRound*10;i<currentRound*10+10;i++){let k=i+'-a',s=get(k);if(s.firstWrong){s.done=false;s.tries=0;s.message='';state[k]=s}}save()}render();window.scrollTo({top:0,behavior:'smooth'})};document.getElementById('plus').onclick=()=>{font=Math.min(font+1,28);document.documentElement.style.setProperty('--font',font+'px')};document.getElementById('minus').onclick=()=>{font=Math.max(font-1,17);document.documentElement.style.setProperty('--font',font+'px')};document.getElementById('theme').onclick=()=>{document.body.classList.toggle('dark');document.getElementById('theme').textContent=document.body.classList.contains('dark')?'淺色模式':'深色模式'};render();
+return '<div class="exercise"><div class="ex-title">'+(mode==='a'?'① 選擇最能保留基本句意思的字詞':'② 自主英文練寫')+'</div><div class="cn">'+esc(mode==='a'?d.cn:d.cn2)+'</div>'+part+(s.message?'<div class="feedback '+(s.message==='再試一次'?'retry':'')+'">'+esc(s.message)+'</div>':'')+(mode==='a'?'<div class="exercise-actions"><button class="action" data-reset-question="'+k+'">清除重做</button></div>':'')+'</div>';
+}function archiveNotice(){const archives=state._contentArchives||[];if(!archives.length)return '';return '<details data-detail="archives"><summary>已保留 '+archives.length+' 份舊題庫作答紀錄</summary><p>本次題目與選項已修訂。舊紀錄完整保留，不用新答案重判；新版進度另計。可匯出完整備份，取得舊作答文字與診斷。</p>'+archives.map(a=>{const raw=a.raw||{};let done=0,wrong=0;for(let i=0;i<60;i++){if(raw[i+'-a']&&raw[i+'-a'].done)done++;if(raw[i+'-b']&&(raw[i+'-b'].completed||raw[i+'-b'].shown))done++;if(raw[i+'-a']&&raw[i+'-a'].firstWrong)wrong++;}return '<p>'+esc(a.source)+'｜舊版完成 '+done+'/120｜首次錯題 '+wrong+'（原紀錄）</p>';}).join('')+'</details>';}
+function historyView(begin,finish){let rows='';for(let i=begin;i<finish;i++){const list=state._retryHistory&&state._retryHistory[i+'-a'];if(!Array.isArray(list))continue;for(let j=0;j<list.length;j++){const r=list[j];rows+='<li>第 '+(i+1)+' 組・重練 '+(j+1)+'：'+esc(r.recordedAt||'舊紀錄：時間未知')+'｜'+(r.done?'已完成':'未完成')+'｜'+(r.attempts||[]).length+' 次作答｜'+(r.attempts&&r.attempts.length?(r.attempts[r.attempts.length-1].ok?'最後作答正確':'最後作答未答對'):'結果未知')+'</li>';}}return rows?'<details data-detail="history"><summary>歷次重練紀錄（首次診斷另存）</summary><ul>'+rows+'</ul></details>':'';}function render(){const openDetails=typeof document.querySelectorAll==='function'?Array.from(document.querySelectorAll('details[data-detail][open]')).map(n=>n.dataset.detail):[];const focused=document.activeElement;const focusKey=focused&&focused.dataset?JSON.stringify(focused.dataset):null;const scrollY=window.scrollY;if(currentRound===null){renderHome();return;}const begin=currentRound*10,finish=begin+10;document.getElementById('home').hidden=true;document.getElementById('practice').hidden=false;document.getElementById('roundTitle').textContent='第 '+(currentRound+1)+' 回｜第 '+(begin+1)+'～'+finish+' 組';let out=DATA.map((d,i)=>{if(i<begin||i>=finish)return '';let a=exercise(d,i,'a'),b=exercise(d,i,'b');if(!a&&!b)return '';return '<section class="group"><div class="group-title">'+String(i+1).padStart(2,'0')+'｜'+esc(d.base)+(active(i+'-a').done?' → '+esc(d.advanced):' → ？')+'</div>'+a+b+( active(i+'-a').done?'<details data-detail="'+i+'"><summary>字詞用法與常見搭配</summary><p>'+esc(d.note)+'</p><p><b>常見搭配：</b>'+esc(d.coll)+'</p>'+optionAnalysis(d)+'</details>':'')+'</section>'}).join('');const hasExercises=!!out;out+=historyView(begin,finish)+archiveNotice();document.getElementById('list').innerHTML=out;if(typeof document.querySelectorAll==='function'){for(const n of document.querySelectorAll('details[data-detail]'))if(openDetails.includes(n.dataset.detail))n.open=true;if(focusKey){const replacement=Array.from(document.querySelectorAll('button,textarea')).find(n=>JSON.stringify(n.dataset)===focusKey);if(replacement)replacement.focus({preventScroll:true})}if(Number.isFinite(scrollY))window.scrollTo({top:scrollY});}let all=DATA.slice(begin,finish).flatMap((d,j)=>[get((begin+j)+'-a'),get((begin+j)+'-b')]),done=all.filter(s=>s.done||complete(s)).length,wrong=DATA.slice(begin,finish).filter((d,j)=>get((begin+j)+'-a').firstWrong).length;document.getElementById('status').textContent='已完成 '+done+' / 20 題';document.getElementById('remaining').textContent=onlyWrong?'首次錯題 '+wrong+' 題｜已重練 '+DATA.slice(begin,finish).filter((d,j)=>get((begin+j)+'-a').firstWrong&&get('_retry_'+(begin+j)+'-a').done).length+'/'+wrong+' 題':'首次錯題 '+wrong+' 題';document.getElementById('fill').style.width=done/20*100+'%';document.getElementById('end').textContent=onlyWrong&&!hasExercises?'目前沒有需要重練的題目。':done===20?'本回練習完成！':'';warning();document.getElementById('retry').textContent=onlyWrong?'返回全部題目':'重練錯題';document.getElementById('newRetry').hidden=!onlyWrong}function renderHome(){warning();document.getElementById('home').hidden=false;document.getElementById('practice').hidden=true;document.getElementById('home').innerHTML=archiveNotice()+'<div class="round-grid">'+Array.from({length:6},(_,r)=>{let done=0,wrong=0;for(let i=r*10;i<r*10+10;i++)for(let m of ['a','b']){let s=get(i+'-'+m);if(s.done||complete(s))done++;if(m==='a'&&s.firstWrong)wrong++}return '<button class="round-card" data-round="'+r+'"><strong>第 '+(r+1)+' 回</strong><small>第 '+(r*10+1)+'～'+(r*10+10)+' 組｜完成 '+done+'/20 題｜首次錯題 '+wrong+' 題</small><div class="round-meter"><span style="width:'+(done/20*100)+'%"></span></div></button>'}).join('')+'</div>';}function snapshotFor(k,s){const d=DATA[Number(k.split('-')[0])];s.questionId=d.questionId+(k.endsWith('-b')?'-b':'-a');s.contentRevision=d.contentRevision;s.snapshot={basic:d.basic,up:d.up,cn:d.cn,cn2:d.cn2,reference:d.chunks.join(' '),options:d.optionDetails.map(o=>({id:o.id,text:o.text})),answer:d.answer};return s}function update(k,s){state[k]=snapshotFor(k,s);save();render()}function judge(k,word){let s=active(k);if(s.done||conflictError||saveError)return;const d=DATA[Number(k.split('-')[0])];if(!d.options.includes(word))return;snapshotFor(k,s);const ok=word===d.answer;s.tries++;(s.attempts||(s.attempts=[])).push({word,optionId:d.optionDetails.find(o=>o.text===word).id,ok,recordedAt:new Date().toISOString()});if(!ok&&!onlyWrong)s.firstWrong=true;if(ok){s.done=true;s.message='答對了！'}else if(s.tries===1){s.message='再試一次'}else{s.done=true;s.message='正確答案：'+d.answer}if(onlyWrong){retryState[k]=s;state['_retry_'+k]={...s};save();render()}else update(k,s)}
+let exportedBackup=false;
+function exportBackup(){let currentRaw=null;try{currentRaw=localStorage.getItem(KEY)}catch(e){}const payload=JSON.stringify({format:'gsat-v14-backup',exportedAt:new Date().toISOString(),sourceRaw,currentRaw,state},null,2);const url=URL.createObjectURL(new Blob([payload],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='gsat-v14-backup-'+Date.now()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);exportedBackup=true;return payload;}
+document.getElementById('exportProgress').onclick=exportBackup;
+document.getElementById('retrySave').onclick=()=>{save();};
+document.getElementById('recoverStore').onclick=()=>{if(!exportedBackup){exportBackup();document.getElementById('saveWarning').textContent='已產生備份下載，請確認檔案已保存，再按一次復原儲存。';return;}if(!confirm('請先確認備份下載已保存。是否以本頁保留的進度復原？原始損毀資料將另存備份，不直接刪除。'))return;try{const raw=localStorage.getItem(KEY);localStorage.setItem(KEY+'-recovery-'+Date.now(),raw===null?'null':raw);lastSavedRaw=raw;corruptCurrent=false;conflictError=false;save();}catch(e){saveError=true;warning();}};
+window.addEventListener('beforeunload',e=>{if(saveError||conflictError||corruptCurrent){e.preventDefault();e.returnValue='';}});
+document.addEventListener('input',e=>{const k=e.target.dataset.writing;if(k){let s=get(k);s.writing=e.target.value;state[k]=snapshotFor(k,s);save()}});
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.hasAttribute('data-round')){currentRound=Number(b.dataset.round);onlyWrong=false;retryState={};savePrefs();render();window.scrollTo({top:0,behavior:'smooth'});return}if(b.hasAttribute('data-reset-all')){resetAll();return}let w=b.dataset.showAnswer;if(w){if(conflictError||saveError)return;let s=get(w);s.shown=!s.shown;if(s.shown)s.completed=true;state[w]=snapshotFor(w,s);save();render();return}w=b.dataset.resetWriting;if(w){if(conflictError||saveError)return;let s=get(w);s.writing='';s.shown=false;state[w]=s;save();render();return}let k=b.dataset.resetQuestion;if(k){if(conflictError||saveError)return;if(onlyWrong){delete state['_retry_'+k];delete retryState[k]}else{const previous=get(k);state[k]={tries:0,done:false,firstWrong:false,chosen:[],message:'',shuffle:(previous.shuffle||0)+1,attempts:[]};delete state['_retry_'+k]}save();render();return}k=b.dataset.choice;if(k){judge(k,b.dataset.word);return}});function resetAll(){if(currentRound===null||conflictError||saveError)return;if(confirm('確定清除本回 20 題、首次錯題及本回重練歷史嗎？舊題庫封存備份不會刪除。')){for(let i=currentRound*10;i<currentRound*10+10;i++){delete state[i+'-a'];delete state[i+'-b'];delete state['_retry_'+i+'-a'];if(state._retryHistory)delete state._retryHistory[i+'-a']}onlyWrong=false;retryState={};savePrefs();save();render();window.scrollTo({top:0,behavior:'smooth'})}}document.getElementById('reset').onclick=resetAll;function goHome(){currentRound=null;onlyWrong=false;retryState={};savePrefs();render();window.scrollTo({top:0,behavior:'smooth'})}document.getElementById('backHome').onclick=goHome;document.getElementById('backBottom').onclick=goHome;document.getElementById('retry').onclick=()=>{onlyWrong=!onlyWrong;if(onlyWrong)retryState={};savePrefs();render();window.scrollTo({top:0,behavior:'smooth'})};document.getElementById('newRetry').onclick=()=>{if(!onlyWrong||currentRound===null||conflictError||saveError)return;if(!confirm('開始新一輪錯題重練？將保留首次診斷與歷次重練紀錄。'))return;const rounds=state._retryHistory&&typeof state._retryHistory==='object'?state._retryHistory:{};for(let i=currentRound*10;i<currentRound*10+10;i++){const k=i+'-a',old=state['_retry_'+k];if(old){(rounds[k]||(rounds[k]=[])).push({...old,runId:Date.now()+'-'+Math.random().toString(36).slice(2),recordedAt:new Date().toISOString()});delete state['_retry_'+k]}}state._retryHistory=rounds;retryState={};save();render()};document.getElementById('plus').onclick=()=>{font=Math.min(font+1,28);document.documentElement.style.setProperty('--font',font+'px');savePrefs()};document.getElementById('minus').onclick=()=>{font=Math.max(font-1,17);document.documentElement.style.setProperty('--font',font+'px');savePrefs()};document.getElementById('theme').onclick=()=>{document.body.classList.toggle('dark');document.getElementById('theme').textContent=document.body.classList.contains('dark')?'淺色模式':'深色模式';savePrefs()};window.addEventListener('storage',e=>{if(e.key===KEY||e.key===null){conflictError=true;warning()}});document.documentElement.style.setProperty('--font',font+'px');if(prefs.dark){document.body.classList.add('dark');document.getElementById('theme').textContent='淺色模式'}render();
 </script></body></html>
