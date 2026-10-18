@@ -3529,7 +3529,7 @@ if(onlyWrong&&!get(i+'-a').firstWrong)return '';if(mode==='b'&&onlyWrong)return 
 let part='';
 if(mode==='a'){
 const up=s.done?esc(d.up).replace('____','<strong>'+esc(d.answer)+'</strong>'):esc(d.up).replace('____','________');
-part='<div class="stem-basic en">'+basicWithTarget(d,i)+'</div>'+sent('升級句',up,'upgrade')+(s.done?wordLink(d,i):'')+'<div class="choices">'+orderFor(i,4).map(j=>{let w=d.options[j],selected=(s.attempts||[]).some(a=>a.word===w);return '<button class="choice '+(selected?(w===d.answer?'selected':'incorrect'):'')+'" data-choice="'+k+'" data-word="'+esc(w)+'" '+(s.done?'disabled':'')+'>'+esc(w)+(selected?'<span class="choice-mark">'+(w===d.answer?' ✓ 答對':' ✕ 答錯')+'</span>':'')+'</button>'}).join('')+'</div>';
+part='<div class="stem-basic en">'+basicWithTarget(d,i)+'</div>'+sent('升級句',up,'upgrade')+(s.done?wordLink(d,i):'')+'<div class="choices">'+orderFor(i,4).map(j=>{let w=d.options[j],selected=(s.attempts||[]).some(a=>a.word===w);return '<button class="choice '+(selected?(w===d.answer?'selected':'incorrect'):'')+'" data-choice="'+k+'" data-word="'+esc(w)+'" '+(s.done?'disabled':'')+'>'+esc(w)+'</button>'}).join('')+'</div>';
 }else{
 part=(get(i+'-a').done?'<div class="write-target">目標字詞：'+esc(d.advanced)+'</div>':'')+'<div class="write-tip">可在腦中組句、口頭回答、寫在紙上或輸入英文；不強制輸入。</div><textarea class="write-area" data-writing="'+k+'" placeholder="自由練寫（非必填）">'+esc(s.writing||'')+'</textarea><div class="write-actions"><button class="action primary" data-show-answer="'+k+'">'+(s.shown?'隱藏參考答案':'查看參考答案')+'</button><button class="action" data-reset-writing="'+k+'">清除練寫</button></div>'+(s.shown?'<div class="write-answer"><b>參考答案</b><div class="en">'+esc(d.chunks.join(' '))+'</div></div>':'');
 }
